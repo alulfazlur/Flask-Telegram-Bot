@@ -286,3 +286,211 @@ TypeError: list indices must be integers or slices, not str
 [2020-04-19 09:23:16,319]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?category=life&language=en", "request": null, "response": {"message": "Internal Server Error"}}
 [2020-04-19 09:24:40,155]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?category=life&language=en", "request": null, "response": {"success": {"total": 1}, "contents": {"quotes": [{"quote": "Life is a game, play it.", "length": "24", "author": "Mother Theresa", "tags": ["game", "life"], "category": "life", "language": "en", "date": "2020-04-19", "permalink": "https://theysaidso.com/quote/mother-theresa-life-is-a-game-play-it", "id": "MAzWc3xqHX6gBtf8s_MYPQeF", "background": "https://theysaidso.com/img/qod/qod-life.jpg", "title": "Quote of the day about life"}]}, "baseurl": "https://theysaidso.com", "copyright": {"year": 2022, "url": "https://theysaidso.com"}}}
 [2020-04-19 09:26:31,679]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?category=life&language=en", "request": null, "response": {"quote": "Life is a game, play it.", "author": "Mother Theresa"}}
+[2020-04-19 11:09:05,784]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 28, in get
+    output['judul'] = track_req['tracks']['items'][0]['album']['name']
+KeyError: 'tracks'
+[2020-04-19 11:09:05,788]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 11:10:45,041]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 28, in get
+    output['judul'] = track_req['tracks']['items'][0]['album']['name']
+KeyError: 'tracks'
+[2020-04-19 11:10:45,045]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 11:12:12,334]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?", "request": {}, "response": {"error": {"status": 401, "message": "No token provided"}}}
+[2020-04-19 11:13:28,368]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?", "request": {}, "response": {"error": {"status": 401, "message": "No token provided"}}}
+[2020-04-19 11:53:16,854]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?", "request": null, "response": {"error": {"status": 401, "message": "No token provided"}}}
+[2020-04-19 12:12:57,372]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?keywords=Ardhito&type=track", "request": null, "response": {"error": {"status": 401, "message": "No token provided"}}}
+[2020-04-19 12:40:16,346]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 29, in get
+    rq = requests.get(self.track_host, params={'q': args['q'], 'type': args['type']})
+AttributeError: 'TracksOfTheDay' object has no attribute 'track_host'
+[2020-04-19 12:40:16,350]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 12:41:03,839]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 36, in get
+    output['judul'] = track_req['tracks']['items'][0]['album']['name']
+KeyError: 'tracks'
+[2020-04-19 12:41:03,843]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 12:42:26,911]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 36, in get
+    output['judul'] = item['tracks']['items'][0]['album']['name']
+TypeError: string indices must be integers
+[2020-04-19 12:42:26,913]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 12:43:48,998]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 36, in get
+    output['judul'] = track_req['tracks']['items'][0]['album']['name']
+KeyError: 'tracks'
+[2020-04-19 12:43:49,004]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 12:44:09,563]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 36, in get
+    output['judul'] = track_req['tracks']['items'][0]['album']['name']
+KeyError: 'tracks'
+[2020-04-19 12:44:09,566]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 12:44:34,616]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?", "request": {}, "response": {"error": {"status": 401, "message": "No token provided"}}}
+[2020-04-19 13:10:25,205]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 29, in get
+    rq = requests.get(self.track_host, params={'q': args['q'], 'type': args['type'], 'limit': args['limit']}, headers=self.headers, data=self.payload)
+KeyError: 'limit'
+[2020-04-19 13:10:25,207]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 13:11:15,481]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
+[2020-04-19 13:33:32,708]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": [{"judul": "bitterlove"}, {"judul": "bitterlove"}, {"judul": "bitterlove"}, {"judul": "bitterlove"}, {"judul": "bitterlove"}]}
+[2020-04-19 13:56:28,464]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
+[2020-04-19 13:59:53,576]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "The method is not allowed for the requested URL."}}
+[2020-04-19 14:00:17,047]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 33, in get
+    singer = track_req['tracks']['items'][0]['artists']['name']
+TypeError: list indices must be integers or slices, not str
+[2020-04-19 14:00:17,050]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 14:16:10,334]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
+[2020-04-19 14:19:11,681]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 33, in get
+    penyanyi = track_req['tracks']['items'][0]['artists']['name']
+TypeError: list indices must be integers or slices, not str
+[2020-04-19 14:19:11,685]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 14:19:37,309]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
+[2020-04-19 14:22:34,639]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
+[2020-04-19 14:22:57,502]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove", "penyanyi": "Ardhito Pramono"}}
+[2020-04-19 14:24:55,322]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 34, in get
+    link = track_req['tracks']['items'][0]['album']['external_url']['spotify']
+KeyError: 'external_url'
+[2020-04-19 14:24:55,325]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 14:25:41,888]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 34, in get
+    link = track_req['tracks']['items'][0]['external_url']['spotify']
+KeyError: 'external_url'
+[2020-04-19 14:25:41,891]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 14:26:19,174]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove", "penyanyi": "Ardhito Pramono", "link": "https://open.spotify.com/track/74OLXYsvpfmSgPCMMi898K"}}
+[2020-04-19 14:27:17,552]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove", "penyanyi": "Ardhito Pramono", "link": "https://open.spotify.com/track/74OLXYsvpfmSgPCMMi898K"}}
+[2020-04-19 14:27:38,125]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"title": "bitterlove", "singer": "Ardhito Pramono", "link": "https://open.spotify.com/track/74OLXYsvpfmSgPCMMi898K"}}

@@ -108,4 +108,7 @@ app.register_blueprint(bp_weather, url_prefix='/weather')
 from blueprints.qod import bp_qod
 app.register_blueprint(bp_qod, url_prefix='/qod')
 
+from blueprints.track import bp_track
+app.register_blueprint(bp_track, url_prefix='/track')
+
 db.create_all()
