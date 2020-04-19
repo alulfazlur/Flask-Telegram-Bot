@@ -4,7 +4,7 @@ from flask import Blueprint
 from flask_restful import Api, reqparse, Resource
 from flask_jwt_extended import jwt_required
 from datetime import date
-
+import random
 bp_qod = Blueprint('qod', __name__)
 api = Api(bp_qod)
 
@@ -12,13 +12,16 @@ class QuotesOfTheDay(Resource):
 	qod_host = "https://quotes.rest/qod"
 
 	def get(self):
-		parser = reqparse.RequestParser()
-		parser.add_argument('category', location='args', default=None)
-		parser.add_argument('language', location='args', default="en")
+		# parser = reqparse.RequestParser()
+		# parser.add_argument('category', location='args', default=None)
+		# parser.add_argument('language', location='args', default="en")
 		
-		args = parser.parse_args()
+		# args = parser.parse_args()
+		
+		# rq = requests.get(self.qod_host, params={'category': args['category'], 'language': args['language']})
+		category = ['inspire', 'love', 'life', 'funny']
+		rq = requests.get(self.qod_host, params={'category': random.choice(category)})
 
-		rq = requests.get(self.qod_host, params={'category': args['category'], 'language': args['language']})
 		qod_req = rq.json()
 
 		# for _ in qod_req:
@@ -27,7 +30,10 @@ class QuotesOfTheDay(Resource):
 		qod['author'] = qod_req['contents']['quotes'][0]['author']
 
 		# print(qod)
-
-		return qod, 200, {'Content-Type': 'application/json'}
+		qts = ''
+		qts = qod_req['contents']['quotes'][0]['quote'] + '\n\n'
+		qts += '- ' + qod_req['contents']['quotes'][0]['author'] + ' -'
+		# return qod, 200, {'Content-Type': 'application/json'}
+		return qts
 
 api.add_resource(QuotesOfTheDay, '')

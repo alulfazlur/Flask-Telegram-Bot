@@ -16,10 +16,6 @@ if os.environ.get('FLASK_ENV', 'Production') == "Production":
 else:
     app.config.from_object(config.DevelopmentConfig)
 
-# app.config['APP_DEBUG'] = True
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:NEWPASSWORD@localhost/aisyahdb'
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
 #initiate flas-restful instance
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)

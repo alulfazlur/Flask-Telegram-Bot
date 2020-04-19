@@ -18,8 +18,6 @@ class Config():
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     JWT_SECRET_KEY = cfg['jwt']['secret_key']
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(days=1)
-    WIO_HOST = cfg['weather']['host']
-    WIO_APIKEY = cfg['weather']['apikey']
 
 
 
