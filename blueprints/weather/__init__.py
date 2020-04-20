@@ -47,7 +47,7 @@ class GetForecastWeather(Resource):
 				hasil['weather today'] = 'Sometimes rain, maybe you should bring umbrella'
 				rslt = 'Sometimes rain, maybe you should bring umbrella\n'
 		hasil['city id'] = forecast['city']['id']
-		# rslt += str(forecast['city']['id']) + '\n'
+		rslt += str(forecast['city']['id']) + '\n'
 		hasil['city'] = forecast['city']['name']
 		rslt += forecast['city']['name'] + '\n'
 		hasil['date'] = str(today)

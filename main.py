@@ -3,15 +3,15 @@ import telebot, time, logging, sys
 TOKEN = '1112054330:AAGx68ug-fhaAhSAqoe4I92LWV6-j_gmWZA'
 bot = telebot.TeleBot(TOKEN)
 
-def echo_messages(messages):
-    """
-    Echoes all incoming messages of content_type 'text'.
-    """
-    for m in messages:
-        chatid = m.chat.id
-        if m.content_type == 'text':
-            text = m.text
-            bot.send_message(chatid, text)
+# def echo_messages(messages):
+#     """
+#     Echoes all incoming messages of content_type 'text'.
+#     """
+#     for m in messages:
+#         chatid = m.chat.id
+#         if m.content_type == 'text':
+#             text = m.text
+#             bot.send_message(chatid, text)
 
 
 # Handle /start and /help
@@ -58,7 +58,15 @@ def forecastWeather(message):
     results = TracksOfTheDay().get()
     bot.reply_to(message, results)
 
-bot.set_update_listener(echo_messages)
+@bot.message_handler(commands=['all'])
+def forecastWeather(message):
+    weather_of_the_day = GetForecastWeather().get()
+    quotes_of_the_day = QuotesOfTheDay().get()
+    track_of_the_day = TracksOfTheDay().get()
+    results = "Good morning, kawula muda!\n\n--Weather today--\n%s\n\n--Quotes of the day--\n%s\n\n--Song for you--%s" % (weather_of_the_day, quotes_of_the_day, track_of_the_day)
+    bot.reply_to(message, results)
+
+# bot.set_update_listener(echo_messages)
 bot.polling()
 
 while True: # Don't let the main Thread end.
