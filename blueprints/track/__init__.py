@@ -10,7 +10,7 @@ api = Api(bp_track)
 
 class TracksOfTheDay(Resource):
 	track_host = "https://api.spotify.com/v1/search"
-	track_apikey = "BQDBWlUAxnwfF1eMsVl3YX_nDp-v683f6g8uGcfMgXvbcjc-yn4jfIwEeWWIghmw9sxy0tC5nv-_Fkxj2PhnhSXBsMKLxxB6Lc8BHjWIt2bNCSZYgKibx3vHx_qk_J_uzLdB8CUb7UUf0BpQ4KmDuAQ_B5BgF3JM6IqzJGcjmm3rL6o"
+	track_apikey = "BQCP_M_uO8Pl5YtPd_5ZkVpC8Sn-ZNRzeIYejFODMFQc8M1BEb6b97aFtGYuK2u5WlzvpDRGG68fTMci6-CS4lBxMcPcIzSoA5979iZ3BIGB0oZUSZwJUzgSyh6_Pww3qouKVuHxGP7EKyffWTPFkBaAE6XD8I68D9Qpz77CTG1uHU_xfMQbrrKCD688wX4XFndM5sy7tTPqmsraGTEHVIyaTX5fxxqfbj4IbX8h4Z1YdWO62hTrmhDxAAd55isB8m1rU-fe8pibXVKhxj8j9pgNPflNug"
 
 	payload = {}
 	headers = {
@@ -38,20 +38,25 @@ class TracksOfTheDay(Resource):
 		singer = track_req['tracks']['items'][0]['artists'][0]['name']
 		link = track_req['tracks']['items'][0]['external_urls']['spotify']
 
-		output = {'title': title, 'singer': singer, 'link': link}
+		# output = {'title': title, 'singer': singer, 'link': link}
 
-		return output, 200, {'Content-Type': 'application/json'}
+		# return output, 200, {'Content-Type': 'application/json'}
 
-		# out = ''
-		# out += track_req['tracks']['items'][0]['album']['name'] + ' - '
-		# out += track_req['tracks']['items'][0]['artists'][0]['name'] + '\n'
-		# out += track_req['tracks']['items'][0]['external_urls']['spotify']
+		out = ''
+		out += title + ' - '
+		out += singer + '\n'
+		out += link
 
-		# return out
+		return out
 
 		# for item in track_req:
 		# track = []
-		# while len(track) < 5:
+		# for item in range(limit):
+		# 	title = track_req['tracks']['items'][0]['album']['name']
+		# 	singer = track_req['tracks']['items'][0]['artists'][0]['name']
+		# 	link = track_req['tracks']['items'][0]['external_urls']['spotify']
+
+
 		# 	output = {}
 		# 	output['judul'] = track_req['tracks']['items'][0]['album']['name']
 		# 	track.append(output)

@@ -31,8 +31,8 @@ class QuotesOfTheDay(Resource):
 
 		# print(qod)
 		qts = ''
-		qts = qod_req['contents']['quotes'][0]['quote'] + '\n\n'
-		qts += '- ' + qod_req['contents']['quotes'][0]['author'] + ' -'
+		qts = qod_req['contents']['quotes'][0]['quote'] + '\n'
+		qts += '- ' + qod_req['contents']['quotes'][0]['author']
 		# return qod, 200, {'Content-Type': 'application/json'}
 		return qts
 
