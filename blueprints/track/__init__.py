@@ -11,7 +11,7 @@ api = Api(bp_track)
 
 class TracksOfTheDay(Resource):
 	track_host = "https://api.spotify.com/v1/search"
-	track_apikey = "BQAr7AgfpHhW2Do53JtAI1mNz5xIjdn8uVvJ2StUSMAC1MUX0gkCvYqvXefTjREKfa1nY1bNYY9htod4ECnWr7yB29RqBGznLS4FjUonvOT9BchIuJsd2mnBUbcXlZ3q4fXP5Tjsp6B9zR_nJZ3KXLsuRooRTNSVvMJW9ss6Z9jE1KM0Tq6fGomA2VYPii8EPS8NTauqlN5s3S4wQ6elOGM_3YWmjHRiHRIfRcvqC4P9lf2zyOgel7Ax4RRRE1Z05f0eP25lBuuJx6uxmJP06YWuHvWIZw"
+	track_apikey = "BQDSc8sRUoQdpa_K9RBUB8iGgrWT_4oBhZKCI2YyblY5dowVKMAi5J9M0wVJp17-KcDVT6ay_f6vhMoQehaAgnW-vCPzuu8jN72b4UNKxiiYg2hdfskZ1GO-38LsFyjrjnEYPhAwyDUxLGlRfLQkEyVAIfusKBTERwxUTPPVMgYaCzQZ_I4UNQ7A75Qbg3JY0BZPFht3NmppacK1exdnSjQQdG0P4v_ai62jqDpWEZ1NJzoNRlPBmTqeyOHhs9mcHoZwhyZl-14xY_coezGwVoWmpD6vaw"
 
 	payload = {}
 	headers = {
@@ -41,7 +41,7 @@ class TracksOfTheDay(Resource):
 		tipe = 'track'
 		limit = 5
 
-		rq = requests.get(self.track_host, params={'q': args['q'], 'type': args['type'], 'limit': args['limit']}, headers=self.headers, data=self.payload)
+		# rq = requests.get(self.track_host, params={'q': args['q'], 'type': args['type'], 'limit': args['limit']}, headers=self.headers, data=self.payload)
 		rq = requests.get(self.track_host, params={'q': q, 'type': tipe, 'limit': limit}, headers=self.headers, data=self.payload)
 		track_req = rq.json()
 		title = track_req['tracks']['items'][0]['album']['name']
@@ -53,22 +53,22 @@ class TracksOfTheDay(Resource):
 		return output, 200, {'Content-Type': 'application/json'}
 		# return title, ' - ', singer, '\n', link
 
-	def getBot(self):
-		q = 'Love'
-		tipe = 'track'
-		limit = 5
+	# def getBot(self):
+	# 	q = 'Love'
+	# 	tipe = 'track'
+	# 	limit = 5
 
-		rq = requests.get(self.track_host, params={'q': q, 'type': tipe, 'limit': limit}, headers=self.headers, data=self.payload)
-		track_req = rq.json()
-		title = track_req['tracks']['items'][0]['album']['name']
-		singer = track_req['tracks']['items'][0]['artists'][0]['name']
-		link = track_req['tracks']['items'][0]['external_urls']['spotify']
+	# 	rq = requests.get(self.track_host, params={'q': q, 'type': tipe, 'limit': limit}, headers=self.headers, data=self.payload)
+	# 	track_req = rq.json()
+	# 	title = track_req['tracks']['items'][0]['album']['name']
+	# 	singer = track_req['tracks']['items'][0]['artists'][0]['name']
+	# 	link = track_req['tracks']['items'][0]['external_urls']['spotify']
 
-		out = ''
-		out += title + ' - '
-		out += singer + '\n'
-		out += link
+	# 	out = ''
+	# 	out += title + ' - '
+	# 	out += singer + '\n'
+	# 	out += link
 
-		return out
+	# 	return out
 
 api.add_resource(TracksOfTheDay, '')

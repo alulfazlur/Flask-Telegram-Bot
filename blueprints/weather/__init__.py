@@ -48,29 +48,29 @@ class GetForecastWeather(Resource):
 		
 		return hasil, 200, {'Content-Type': 'application/json'}
 
-	def getBot(self, city):
-		rq = requests.get(self.owm_host, params={'q': city, 'appid': self.owm_apikey})
-		forecast = rq.json()
+	# def getBot(self, city):
+	# 	rq = requests.get(self.owm_host, params={'q': city, 'appid': self.owm_apikey})
+	# 	forecast = rq.json()
 
-		today = date.today()
+	# 	today = date.today()
 
-		tgl = ''
-		rslt = ''
-		counter = 0
-		for period in forecast['list']:
-			tgl = period['dt_txt'].split()
-			hasil = {}
-			if tgl[0] == str(today) and period['weather'][0]['main'] == 'Rain':
-				counter += 1
-			if counter >= 4 :
-				rslt = 'Mostly rain, you should bring your umbrella!'+ '\n'
-			elif counter == 0 :
-				rslt = 'Sun bright all day, no need to bring umbrella'+ '\n'
-			else :
-				rslt = 'Sometimes rain, maybe you should bring umbrella' + '\n'
-		rslt += forecast['city']['name'] + '\n'
-		rslt += str(today)
+	# 	tgl = ''
+	# 	rslt = ''
+	# 	counter = 0
+	# 	for period in forecast['list']:
+	# 		tgl = period['dt_txt'].split()
+	# 		hasil = {}
+	# 		if tgl[0] == str(today) and period['weather'][0]['main'] == 'Rain':
+	# 			counter += 1
+	# 		if counter >= 4 :
+	# 			rslt = 'Mostly rain, you should bring your umbrella!'+ '\n'
+	# 		elif counter == 0 :
+	# 			rslt = 'Sun bright all day, no need to bring umbrella'+ '\n'
+	# 		else :
+	# 			rslt = 'Sometimes rain, maybe you should bring umbrella' + '\n'
+	# 	rslt += forecast['city']['name'] + '\n'
+	# 	rslt += str(today)
 		
-		return rslt
+	# 	return rslt
 
 api.add_resource(GetForecastWeather, '')

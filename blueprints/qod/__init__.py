@@ -6,7 +6,7 @@ from flask_jwt_extended import jwt_required
 from datetime import date
 import random
 from blueprints.weather import GetForecastWeather
-from blueprints.package.model import Package
+# from blueprints.package.model import Package
 bp_qod = Blueprint('qod', __name__)
 api = Api(bp_qod)
 
@@ -40,20 +40,20 @@ class QuotesOfTheDay(Resource):
 		return qod, 200, {'Content-Type': 'application/json'}
 
 
-	def getBot(self):
-		category = ['inspire', 'love', 'life', 'funny']
-		rq = requests.get(self.qod_host, params={'category': random.choice(category)})
+	# def getBot(self):
+	# 	category = ['inspire', 'love', 'life', 'funny']
+	# 	rq = requests.get(self.qod_host, params={'category': random.choice(category)})
 
-		qod_req = rq.json()
+	# 	qod_req = rq.json()
 
-		qod = {}
-		qod['quote'] = qod_req['contents']['quotes'][0]['quote'] 
-		qod['author'] = qod_req['contents']['quotes'][0]['author']
+	# 	qod = {}
+	# 	qod['quote'] = qod_req['contents']['quotes'][0]['quote'] 
+	# 	qod['author'] = qod_req['contents']['quotes'][0]['author']
 
-		qts = ''
-		qts = qod_req['contents']['quotes'][0]['quote'] + '\n'
-		qts += '- ' + qod_req['contents']['quotes'][0]['author']
+	# 	qts = ''
+	# 	qts = qod_req['contents']['quotes'][0]['quote'] + '\n'
+	# 	qts += '- ' + qod_req['contents']['quotes'][0]['author']
 
-		return qts
+	# 	return qts
 
 api.add_resource(QuotesOfTheDay, '')
