@@ -19,6 +19,15 @@ class Config():
     JWT_SECRET_KEY = cfg['jwt']['secret_key']
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(days=1)
 
+    WEATHER_HOST = cfg['weather']['host']
+    WEATHER_APIKEY = cfg['weather']['apikey']
+
+    QOD_HOST = cfg['qod']['host']
+
+    TRACK_HOST = cfg['track']['host']
+    TRACK_APIKEY = cfg['track']['apikey']
+
+    BOT_TOKEN = cfg['bot']['token']
 
 
 class DevelopmentConfig(Config):
@@ -47,3 +56,16 @@ class TestingConfig(Config):
         cfg['mysql']['port'],
         cfg['mysql']['db']
     )
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    JWT_SECRET_KEY = cfg['jwt']['secret_key']
+    JWT_ACCESS_TOKEN_EXPIRES = timedelta(days=1)
+
+    WEATHER_HOST = cfg['weather']['host']
+    WEATHER_APIKEY = cfg['weather']['apikey']
+
+    QOD_HOST = cfg['qod']['host']
+
+    TRACK_HOST = cfg['track']['host']
+    TRACK_APIKEY = cfg['track']['apikey']
+
+    BOT_TOKEN = cfg['bot']['token']

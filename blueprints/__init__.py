@@ -89,17 +89,14 @@ def after_request(response):
     #         'response': json.loads(response.data.decode('utf-8'))}))
     return response
 
-# from blueprints.book.resources import bp_book
-# app.register_blueprint(bp_book, url_prefix='/book')
-
 from blueprints.auth import bp_auth
 app.register_blueprint(bp_auth, url_prefix='/token')
 
 from blueprints.client.resources import bp_client
 app.register_blueprint(bp_client, url_prefix='/client')
 
-# from blueprints.package.resources import bp_package
-# app.register_blueprint(bp_package, url_prefix='/package')
+from blueprints.package.resources import bp_package
+app.register_blueprint(bp_package, url_prefix='/package')
 
 from blueprints.qod import bp_qod
 app.register_blueprint(bp_qod, url_prefix='/qod')

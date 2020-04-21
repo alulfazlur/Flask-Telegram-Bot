@@ -3,7 +3,7 @@ from flask import Flask, request, json
 from app import cache
 from blueprints import db, app
 from blueprints.client.model import Clients
-# from blueprints.package.model import Package
+from blueprints.package.model import Package
 from blueprints.qod.model import Qod
 from blueprints.track.model import Tracks
 from blueprints.weather.model import Weather
@@ -45,9 +45,9 @@ def init_database():
     db.session.add(track)
     db.session.commit()
 
-    # package = Package(weather_category=1, qod_category=1, song_category=1)
-    # db.session.add(package)
-    # db.session.commit()
+    package = Package(weather_category=1, qod_category=1, song_category=1)
+    db.session.add(package)
+    db.session.commit()
 
     yield db
 

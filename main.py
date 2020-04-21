@@ -1,6 +1,11 @@
-import telebot, time, logging, sys, requests
+import telebot, time, logging, sys, requests, emojis
+from blueprints.weather import GetForecastWeather
+from blueprints.qod import QuotesOfTheDay
+from blueprints.track import TracksOfTheDay
+from blueprints import app
+import json
 
-TOKEN = '1112054330:AAGx68ug-fhaAhSAqoe4I92LWV6-j_gmWZA'
+TOKEN = app.config['BOT_TOKEN']
 bot = telebot.TeleBot(TOKEN)
 knownUsers = []  # todo: save these in a file,
 userStep = {}  # so they won't reset every time the bot restarts
@@ -8,10 +13,19 @@ userStep = {}  # so they won't reset every time the bot restarts
 commands = {  # command description used in the "help" command
     'start'     : 'Get used to the bot',
     'help'      : 'Gives you information about the available commands',
-    'umbrella'  : "Should you bring the umbrella?",
-    'qod'       : 'Your quotes of the day',
-    'track'      : 'Your track of the day'
+    'umbrella'  : "Should you bring the umbrella today?",
+    'qod'       : 'Your weather and quote of the day',
+    'oftheday'  : 'Your weather, quote, and track of the day'
 }
+
+rain = u'\U00002614'
+thunderstorm = u'\U0001F4A8'
+hot = u'\U0001F525'
+love = emojis.encode(':heart:')
+kiss = emojis.encode(':kissing_heart:')
+funny = emojis.encode(':satisfied:')
+inspire = emojis.encode(':satisfied:')
+notes = emojis.encode(":notes:")
 
 def listener(messages):
     """
@@ -21,7 +35,6 @@ def listener(messages):
         if m.content_type == 'text':
             # print the sent message to the console
             print(str(m.chat.first_name) + " [" + str(m.chat.id) + "]: " + m.text)
-
 
 
 @bot.message_handler(commands=['start'])
@@ -46,59 +59,94 @@ def command_help(m):
         help_text += commands[key] + "\n"
     bot.send_message(cid, help_text)  # send the generated help page
 
-from blueprints.weather import GetForecastWeather
-import json
 @bot.message_handler(commands=['umbrella'])
-def forecastWeather(message):
+def startForecast(message):
     sent = bot.send_message(message.chat.id, 'Where are you now?')
-    bot.register_next_step_handler(sent, forecastSent)
-def forecastSent(message):
+    bot.register_next_step_handler(sent, outForecast)
+def outForecast(message):
     chatid = message.chat.id
     text = message.text
-    get = 'http://0.0.0.0:9000/weather?q=%s' % (text)
-    req = requests.get(get)
-    res = req.json()
-    # weath = json.loads(req.data)
-    # results = GetForecastWeather().getBot(text)
-    bot.send_message(message.chat.id, 'You are in ' + text + ' now, at '+ res['date'] + '\n' + res['weather today'])
 
-from blueprints.qod import QuotesOfTheDay
+    weather_of_the_day = 'http://0.0.0.0:'+ str(app.config['APP_PORT']) +'/weather?q=%s' % (text)
+    req_weather = requests.get(weather_of_the_day)
+    res_weather = req_weather.json()
+    if res_weather['main'] == 'thunderstorm':
+        emot_weather = thunderstorm
+    elif res_weather['main'] == 'hot':
+        emot_weather = hot
+    else :
+        emot_weather = rain
+    result = emot_weather + '--Weather of the day--' + emot_weather +'\nYou are in ' + text + ' now, at '+ res_weather['date'] + '\n'+ res_weather['weather today'] + '\n'
+    bot.send_message(message.chat.id, result)
+
 @bot.message_handler(commands=['qod'])
-def quotesOftheDay(message):
-    results = QuotesOfTheDay().getBot()
-    bot.send_message(message.chat.id, results)
-
-from blueprints.track import TracksOfTheDay
-# @bot.message_handler(commands=['track'])
-# def forecastWeather(message):
-#     results = TracksOfTheDay().getBot()
-#     bot.reply_to(message, results)
-
-@bot.message_handler(commands=['all'])
-def forecastWeather(message):
+def startQod(message):
     sent = bot.send_message(message.chat.id, 'Where are you now?')
-    bot.register_next_step_handler(sent, all)
-def all(message):
+    bot.register_next_step_handler(sent, outQod)
+def outQod(message):
     result = ''
     chatid = message.chat.id
     text = message.text
 
-    weather_of_the_day = 'http://0.0.0.0:9000/weather?q=%s' % (text)
+    weather_of_the_day = 'http://0.0.0.0:'+ str(app.config['APP_PORT']) +'/weather?q=%s' % (text)
     req_weather = requests.get(weather_of_the_day)
     res_weather = req_weather.json()
-    result += '--Weather of the day--\nYou are in ' + text + ' now, at '+ res_weather['date'] + '\n' + res_weather['weather today'] + '\n'
+    if res_weather['main'] == 'thunderstorm':
+        emot_weather = thunderstorm
+    elif res_weather['main'] == 'hot':
+        emot_weather = hot
+    else :
+        emot_weather = rain
+    result += emot_weather + '--Weather of the day--' + emot_weather +'\nYou are in ' + text + ' now, at '+ res_weather['date'] + '\n'+ res_weather['weather today'] + '\n'
 
-    quote_of_the_day = 'http://0.0.0.0:9000/qod?q=%s' % (text)
+    quote_of_the_day = 'http://0.0.0.0:'+ str(app.config['APP_PORT']) +'/qod?q=%s' % (text)
     req_quote = requests.get(quote_of_the_day)
     res_quote = req_quote.json()
-    result += '\n--Quotes of the day--\n' + res_quote['quote'] + '\n-' + res_quote['author'] + '-\n'
+    if res_quote['category'] == 'love':
+        emot_qod = kiss
+    elif res_quote['category'] == 'funny':
+        emot_qod = funny
+    else :
+        emot_qod = inspire
+    result += '\n' + emot_qod +'--Quotes of the day--' + emot_qod + '\n' + res_quote['quote'] + '\n-' + res_quote['author'] + '-\n'
+    bot.send_message(message.chat.id, result)
 
-    track_of_the_day = 'http://0.0.0.0:9000/track?q=%s' % (text)
+@bot.message_handler(commands=['oftheday'])
+def startOftheDay(message):
+    sent = bot.send_message(message.chat.id, 'Where are you now?')
+    bot.register_next_step_handler(sent, outOftheDay)
+def outOftheDay(message):
+    result = ''
+    chatid = message.chat.id
+    text = message.text
+
+    weather_of_the_day = 'http://0.0.0.0:'+ str(app.config['APP_PORT']) +'/weather?q=%s' % (text)
+    req_weather = requests.get(weather_of_the_day)
+    res_weather = req_weather.json()
+    if res_weather['main'] == 'thunderstorm':
+        emot_weather = thunderstorm
+    elif res_weather['main'] == 'hot':
+        emot_weather = hot
+    else :
+        emot_weather = rain
+    result += emot_weather + '--Weather of the day--' + emot_weather +'\nYou are in ' + text + ' now, at '+ res_weather['date'] + '\n'+ res_weather['weather today'] + '\n'
+
+    quote_of_the_day = 'http://0.0.0.0:'+ str(app.config['APP_PORT']) +'/qod?q=%s' % (text)
+    req_quote = requests.get(quote_of_the_day)
+    res_quote = req_quote.json()
+    if res_quote['category'] == 'love':
+        emot_qod = kiss
+    elif res_quote['category'] == 'funny':
+        emot_qod = funny
+    else :
+        emot_qod = inspire
+    result += '\n' + emot_qod +'--Quotes of the day--' + emot_qod + '\n' + res_quote['quote'] + '\n-' + res_quote['author'] + '-\n'
+
+    track_of_the_day = 'http://0.0.0.0:'+ str(app.config['APP_PORT']) +'/track?q=%s' % (text)
     req_track = requests.get(track_of_the_day)
     res_track = req_track.json()
-    result += '\n--Track of the day--\n' + res_track['title'] + ' - ' + res_track['singer'] + '\n' + res_track['link']
+    result += '\n' + notes + '--Track of the day--' + notes + '\n' + res_track['title'] + ' - ' + res_track['singer'] + '\n' + res_track['link']
 
-    # results = "Good morning, kawula muda!\n\n--Weather today--\n%s\n\n--Quotes of the day--\n%s\n\n--Song for you--%s" % (weather_of_the_day, quotes_of_the_day, track_of_the_day)
     bot.send_message(message.chat.id, result)
 
 bot.polling()

@@ -10,8 +10,8 @@ bp_track = Blueprint('track', __name__)
 api = Api(bp_track)
 
 class TracksOfTheDay(Resource):
-	track_host = "https://api.spotify.com/v1/search"
-	track_apikey = "BQDSc8sRUoQdpa_K9RBUB8iGgrWT_4oBhZKCI2YyblY5dowVKMAi5J9M0wVJp17-KcDVT6ay_f6vhMoQehaAgnW-vCPzuu8jN72b4UNKxiiYg2hdfskZ1GO-38LsFyjrjnEYPhAwyDUxLGlRfLQkEyVAIfusKBTERwxUTPPVMgYaCzQZ_I4UNQ7A75Qbg3JY0BZPFht3NmppacK1exdnSjQQdG0P4v_ai62jqDpWEZ1NJzoNRlPBmTqeyOHhs9mcHoZwhyZl-14xY_coezGwVoWmpD6vaw"
+	track_host = app.config['TRACK_HOST']
+	track_apikey = app.config['TRACK_APIKEY']
 
 	payload = {}
 	headers = {

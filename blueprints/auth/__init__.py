@@ -13,7 +13,7 @@ bp_auth = Blueprint('auth', __name__)
 api = Api(bp_auth)
 
 class CreateTokenResource(Resource):
-
+    # @internal_required
     def get(self):
         parser = reqparse.RequestParser()
         parser.add_argument('client_key', location='args', required=True)
@@ -22,20 +22,16 @@ class CreateTokenResource(Resource):
         
         qry_client = Clients.query.filter_by(client_key=args['client_key']).first()
 
-        # print(vars(qry_client))
-
         if qry_client is not None:
             client_salt = qry_client.salt
             encoded = ('%s%s' % (args['client_secret'], client_salt)).encode('utf-8')
             hash_pass = hashlib.sha512(encoded).hexdigest()
-            if hash_pass == qry_client.client_secret:
+            if hash_pass == qry_client.client_secret and qry_client.client_key == args['client_key']:
                 qry_client = marshal(qry_client, Clients.jwt_client_fields)
                 qry_client['identifier'] = "altabatch5"
                 token = create_access_token(identity=args['client_key'], user_claims=qry_client)
                 return {'token': token}, 200
-            
-        return {'status': 'UNAUTHORIZED', 'message': 'invalid key or secret'}, 401
-
+        return {'status': 'UNAUTHORIZED', 'message': 'invalid key or secret'}, 404
 
 class RefreshTokenResource(Resource):
 
@@ -46,6 +42,7 @@ class RefreshTokenResource(Resource):
         claims = get_jwt_claims()
         token = create_access_token(identity=current_user, user_claims=claims)
         return {'token': token}, 200
+
 
 api.add_resource(CreateTokenResource, '')
 api.add_resource(RefreshTokenResource, '/refresh')

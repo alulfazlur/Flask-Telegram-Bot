@@ -13,7 +13,7 @@ class Qod(db.Model):
     __tablename__ = "qod"
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     category = db.Column(db.String(100), nullable=False)
-    # package = db.relationship('Package', backref='qod', lazy=True, uselist=False)
+    package = db.relationship('Package', backref='qod', lazy=True, uselist=False)
 
     response_fields = {
         'id': fields.Integer,

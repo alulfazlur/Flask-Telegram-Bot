@@ -1,170 +1,60 @@
-# import json
-# from . import app, client, cache, create_token_internal, create_token_noninternal, init_database
+import json
+from . import app, client, create_token_internal
+from unittest import mock
+from unittest.mock import patch
 
-# class TestQodCrud():
+class Testqod():
+    def mocked_qod_get(*args, **kwargs):
+        class MockResponse:
+            def __init__(self, json_data, status_code):
+                self.json_data = json_data
+                self.status_code = status_code
 
-#     def test_qod_list_internal(self, client, init_database):
-#         token = create_token_internal()
-#         data = {
-#             "category": ""
-#         }
-#         res = client.get('/qod/', 
-#                         query_string=data,
-#                         headers={'Authorization': 'Bearer ' + token}, 
-#                         content_type='application/json')
+            def json(self):
+                return self.json_data
 
-#         res_json = json.loads(res.data)
-#         assert res.status_code == 200
+        if len(args) > 0:
+            if args[0] == "https://quotes.rest":
+                return MockResponse({
+                                "contents": {
+                                "quotes": [
+                                {
+                                    "quote": "inspire is only a dirty trick played on us to achieve continuation of the species.",
+                                    "length": "79",
+                                    "author": "W. Somerset Maugham",
+                                    "tags": [
+                                    "inspire"
+                                    ],
+                                    "category": "inspire",
+                                    "language": "en",
+                                    "date": "2020-04-21",
+                                    "permalink": "https://theysaidso.com/quote/w-somerset-maugham-inspire-is-only-a-dirty-trick-played-on-us-to-achieve-continuati",
+                                    "id": "1HNWf1klXOHWmakzO__9JgeF",
+                                    "background": "https://theysaidso.com/img/qod/qod-inspire.jpg",
+                                    "title": "Quote of the day about inspire"
+                                }
+                                ]
+                            },
+                            "baseurl": "https://theysaidso.com",
+                            "copyright": {
+                                "year": 2022,
+                                "url": "https://theysaidso.com"
+                            }
+                            }, 200)
+        else:
+            return MockResponse(None, 404)
 
-
-
-#     # def test_client_param_id_internal(self, client, init_database):
-#     #     token = create_token_internal()
-#     #     res = client.get('/client?id=1', 
-#     #                     headers={'Authorization': 'Bearer ' + token}, 
-#     #                     content_type='application/json')
-
-#     #     res_json = json.loads(res.data)
-#     #     assert res.status_code == 200
-
-#     # def test_client_param_status_internal(self, client, init_database):
-#     #     token = create_token_internal()
-#     #     res = client.get('/client?status=true', 
-#     #                     headers={'Authorization': 'Bearer ' + token}, 
-#     #                     content_type='application/json')
-
-#     #     res_json = json.loads(res.data)
-#     #     assert res.status_code == 200
-
-#     # def test_client_list_orderby_id(self, client, init_database):
-#     #     token = create_token_internal()
-#     #     res = client.get('/client?orderby=id&sort=desc', 
-#     #                     headers={'Authorization': 'Bearer ' + token}, 
-#     #                     content_type='application/json')
-
-#     #     res_json = json.loads(res.data)
-#     #     assert res.status_code == 200
-
-#     # def test_client_list_orderby_id_no_sort(self, client, init_database):
-#     #     token = create_token_internal()
-#     #     res = client.get('/client?orderby=id&sort=asc', 
-#     #                     headers={'Authorization': 'Bearer ' + token}, 
-#     #                     content_type='application/json')
-
-#     #     res_json = json.loads(res.data)
-#     #     assert res.status_code == 200
-
-#     # def test_client_list_orderby_status(self, client, init_database):
-#     #     token = create_token_internal()
-#     #     res = client.get('/client?orderby=status', 
-#     #                     headers={'Authorization': 'Bearer ' + token}, 
-#     #                     content_type='application/json')
-
-#     #     res_json = json.loads(res.data)
-#     #     assert res.status_code == 200
-
-#     # # def test_client_list_noninternal(self, client):
-#     # #     token = create_token_noninternal()
-#     # #     res = client.get('/client', 
-#     # #                     headers={'Authorization': 'Bearer ' + token}, 
-#     # #                     content_type='application/json')
-
-#     # #     res_json = json.loads(res.data)
-#     # #     assert res.status_code == 403
-
-#     # def test_client_get_id_internal(self, client, init_database):
-#     #     token = create_token_internal()
-#     #     res = client.get('/client/2', 
-#     #                     headers={'Authorization': 'Bearer ' + token}, 
-#     #                     content_type='application/json')
-
-#     #     res_json = json.loads(res.data)
-#     #     assert res.status_code == 200
-
-#     # def test_client_invalid_get_id_internal(self, client, init_database):
-#     #     token = create_token_internal()
-#     #     res = client.get('/client/ ', 
-#     #                     headers={'Authorization': 'Bearer ' + token}, 
-#     #                     content_type='application/json')
-
-#     #     res_json = json.loads(res.data)
-#     #     assert res.status_code == 404
-
-#     # def test_client_post_internal(self, client, init_database):
-#     #     token = create_token_internal()
-#     #     data = {
-#     #             "client_key": "client10",
-#     #             "client_secret": "secret10",
-#     #             "status": "True"
-#     #     }
-#     #     res = client.post('/client', 
-#     #                     data = json.dumps(data),
-#     #                     headers={'Authorization': 'Bearer ' + token}, 
-#     #                     content_type='application/json')
-
-#     #     res_json = json.loads(res.data)
-#     #     assert res.status_code == 200
-
-#     #     self.id_client = res_json['id']
-
-    
-#     # def test_client_put_internal(self, client, init_database):
-#     #     token = create_token_internal()
-#     #     data = {
-#     #             "client_key": "client11",
-#     #             "client_secret": "secret11",
-#     #             "status": "True"
-#     #     }
-#     #     res = client.put('/client/2', 
-#     #                     data = json.dumps(data),
-#     #                     headers={'Authorization': 'Bearer ' + token}, 
-#     #                     content_type='application/json')
-
-#     #     res_json = json.loads(res.data)
-#     #     assert res.status_code == 200
-
-#     # def test_client_invalid_put_internal(self, client, init_database):
-#     #     token = create_token_internal()
-#     #     data = {
-#     #             "client_key": "client11",
-#     #             "client_secret": "secret11",
-#     #             "status": "True"
-#     #     }
-#     #     res = client.put('/client/ ', 
-#     #                     data = json.dumps(data),
-#     #                     headers={'Authorization': 'Bearer ' + token}, 
-#     #                     content_type='application/json')
-
-#     #     res_json = json.loads(res.data)
-#     #     assert res.status_code == 404
-
-    
-#     # def test_client_delete_internal(self, client, init_database):
-#     #     token = create_token_internal()
-#     #     data = {
-#     #             "client_key": "client11",
-#     #             "client_secret": "secret11",
-#     #             "status": "True"
-#     #     }
-#     #     res = client.delete('/client/2', 
-#     #                     data = json.dumps(data),
-#     #                     headers={'Authorization': 'Bearer ' + token}, 
-#     #                     content_type='application/json')
-
-#     #     res_json = json.loads(res.data)
-#     #     assert res.status_code == 200
-
-#     # def test_client_invalid_delete_internal(self, client, init_database):
-#     #     token = create_token_internal()
-#     #     data = {
-#     #             "client_key": "client11",
-#     #             "client_secret": "secret11",
-#     #             "status": "True"
-#     #     }
-#     #     res = client.delete('/client/ ', 
-#     #                     data = json.dumps(data),
-#     #                     headers={'Authorization': 'Bearer ' + token}, 
-#     #                     content_type='application/json')
-
-#     #     res_json = json.loads(res.data)
-#     #     assert res.status_code == 404
+    @mock.patch('requests.get', side_effect=mocked_qod_get)
+    @patch('blueprints.weather.GetForecastWeather.get')
+    def test_check_weather(self, weather_mock, get_mock, client):
+        weather_mock.return_value = [{
+                "weather today": "Weather",
+                "main": "rain",
+                "city id": 1636722,
+                "city": "Malang",
+                "date": "2020-04-22"
+            }, 200, {'Content-Type': 'application/json'}]
+        
+        res = client.get('/qod', query_string={"q": "Malang"})
+        res_json = json.loads(res.data)
+        assert res.status_code == 200

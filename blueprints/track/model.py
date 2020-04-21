@@ -13,7 +13,7 @@ class Tracks(db.Model):
     __tablename__ = "track"
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     category = db.Column(db.String(100), nullable=False)
-    # package = db.relationship('Package', backref='track', lazy=True, uselist=False)
+    package = db.relationship('Package', backref='track', lazy=True, uselist=False)
 
 
     response_fields = {

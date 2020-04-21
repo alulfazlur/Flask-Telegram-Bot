@@ -11,7 +11,7 @@ bp_qod = Blueprint('qod', __name__)
 api = Api(bp_qod)
 
 class QuotesOfTheDay(Resource):
-	qod_host = "https://quotes.rest/qod"
+	qod_host = app.config['QOD_HOST']
 
 	def get(self):
 
@@ -32,11 +32,11 @@ class QuotesOfTheDay(Resource):
 		rq = requests.get(self.qod_host, params={'category': category})
 		qod_req = rq.json()
 
-		for _ in qod_req:
-			qod = {}
-			qod['quote'] = qod_req['contents']['quotes'][0]['quote'] 
-			qod['author'] = qod_req['contents']['quotes'][0]['author']
-			qod['category'] = category
+		# for _ in qod_req:
+		qod = {}
+		qod['quote'] = qod_req['contents']['quotes'][0]['quote'] 
+		qod['author'] = qod_req['contents']['quotes'][0]['author']
+		qod['category'] = category
 		return qod, 200, {'Content-Type': 'application/json'}
 
 

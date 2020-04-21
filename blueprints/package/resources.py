@@ -79,7 +79,7 @@ class PackageList(Resource):
         parser.add_argument('weather_category', location='args', help='invalid status')
         parser.add_argument('qod_category', location='args', help='invalid status')
         parser.add_argument('song_category', location='args', help='invalid status')
-        parser.add_argument('orderby', location='args', help='invalid orderby value', choices=('weather_category','qod_category', 'song_category'))
+        # parser.add_argument('orderby', location='args', help='invalid orderby value', choices=('weather_category','qod_category', 'song_category'))
         parser.add_argument('sort', location='args', help='invalid sort value', choices=('desc', 'asc'))
 
         args = parser.parse_args()
@@ -98,24 +98,24 @@ class PackageList(Resource):
             qry = qry.filter_by(title=args['song_category'])
 
 
-        if args['orderby'] is not None:
-            if args['orderby'] == 'weather_category':
-                if args['sort'] == 'desc':
-                    qry = qry.order_by(desc(Package.weather_category))
-                else:
-                    qry = qry.order_by(Package.weather_category)
+        # if args['orderby'] is not None:
+        #     if args['orderby'] == 'weather_category':
+        #         if args['sort'] == 'desc':
+        #             qry = qry.order_by(desc(Package.weather_category))
+        #         else:
+        #             qry = qry.order_by(Package.weather_category)
 
-            elif args['orderby'] == 'qod_category':
-                if args['sort'] == 'desc':
-                    qry = qry.order_by(desc(Package.qod_category))
-                else:
-                    qry = qry.order_by(Package.qod_category)
+        #     elif args['orderby'] == 'qod_category':
+        #         if args['sort'] == 'desc':
+        #             qry = qry.order_by(desc(Package.qod_category))
+        #         else:
+        #             qry = qry.order_by(Package.qod_category)
 
-            elif args['orderby'] == 'song_category':
-                if args['sort'] == 'desc':
-                    qry = qry.order_by(desc(Package.song_category))
-                else:
-                    qry = qry.order_by(Package.song_category)
+        #     elif args['orderby'] == 'song_category':
+        #         if args['sort'] == 'desc':
+        #             qry = qry.order_by(desc(Package.song_category))
+        #         else:
+        #             qry = qry.order_by(Package.song_category)
 
         rows =[]
         for row in qry.limit(args['rp']).offset(offset).all():

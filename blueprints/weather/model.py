@@ -13,7 +13,7 @@ class Weather(db.Model):
     __tablename__ = "weather"
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     status = db.Column(db.String(100), nullable=False)
-    # package = db.relationship('Package', backref='weather', lazy=True, uselist=False)
+    package = db.relationship('Package', backref='weather', lazy=True, uselist=False)
 
 
     response_fields = {

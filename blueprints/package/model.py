@@ -9,13 +9,16 @@ from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import backref
 
+from blueprints.weather.model import Weather
+from blueprints.track.model import Tracks
+from blueprints.qod.model import Qod
 
 class Package(db.Model):
     __tablename__ = "package"
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    weather_category = db.Column(db.String(100), nullable=False)
-    qod_category = db.Column(db.String(100), nullable=False)
-    song_category = db.Column(db.String(100), nullable=False)
+    weather_category = db.Column(db.Integer, db.ForeignKey('weather.id'))
+    qod_category = db.Column(db.Integer, db.ForeignKey('qod.id'))
+    song_category = db.Column(db.Integer, db.ForeignKey('track.id'))
 
     response_fields = {
         'id': fields.Integer,

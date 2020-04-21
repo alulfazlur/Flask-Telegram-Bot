@@ -9,8 +9,8 @@ bp_weather = Blueprint('weather', __name__)
 api = Api(bp_weather)
 
 class GetForecastWeather(Resource):
-	owm_host = "http://api.openweathermap.org/data/2.5/forecast"
-	owm_apikey = "a11dc66d804a26212628ebeb53c01a6a"
+	owm_host = app.config['WEATHER_HOST']
+	owm_apikey = app.config['WEATHER_APIKEY']
 
 	def get(self):
 		parser = reqparse.RequestParser()
@@ -38,15 +38,19 @@ class GetForecastWeather(Resource):
 
 			if counter >= 4 :
 				hasil['weather today'] = 'Mostly rain, you should bring your umbrella!'
+				hasil['main'] = 'thunderstorm'
 			elif counter == 0 :
 				hasil['weather today'] = 'Sun bright all day, no need to bring umbrella'
+				hasil['main'] = 'hot'
 			else :
 				hasil['weather today'] = 'Sometimes rain, maybe you should bring umbrella'
+				hasil['main'] = 'rain'
 			hasil['city id'] = forecast['city']['id']
 			hasil['city'] = forecast['city']['name']
 			hasil['date'] = str(today)
 		
 		return hasil, 200, {'Content-Type': 'application/json'}
+		# return forecast, 200, {'Content-Type': 'application/json'}
 
 	# def getBot(self, city):
 	# 	rq = requests.get(self.owm_host, params={'q': city, 'appid': self.owm_apikey})
