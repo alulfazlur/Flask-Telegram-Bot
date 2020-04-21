@@ -12,8 +12,7 @@ from sqlalchemy.orm import backref
 class Tracks(db.Model):
     __tablename__ = "track"
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    qod_id = db.Column(db.Integer, db.ForeignKey('qod.id'))
-    category = db.Column(db.String(20), nullable=False)
+    category = db.Column(db.String(100), nullable=False)
 
     response_fields = {
         'id': fields.Integer,
