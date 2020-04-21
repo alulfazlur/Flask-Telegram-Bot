@@ -33,17 +33,17 @@ jwt = JWTManager(app)
 #         'identifier': "ATA-BATCH5"
 #     }
 
-# def internal_required(fn):
-#     @wraps(fn)
-#     def wrapper(*args, **kwargs):
-#         verify_jwt_in_request()
-#         claims = get_jwt_claims()
-#         if claims['status'] == 'False':
-#         #  == "True" and claims['client_key'] == "internal":
-#             return {'status': 'FORBIDDEN', 'message': 'Internal only'}, 403
-#         else:
-#             return fn(*args, **kwargs)
-#     return wrapper
+def internal_required(fn):
+    @wraps(fn)
+    def wrapper(*args, **kwargs):
+        verify_jwt_in_request()
+        claims = get_jwt_claims()
+        if claims['status'] == 'False':
+        #  == "True" and claims['client_key'] == "internal":
+            return {'status': 'FORBIDDEN', 'message': 'Internal only'}, 403
+        else:
+            return fn(*args, **kwargs)
+    return wrapper
 
 
 

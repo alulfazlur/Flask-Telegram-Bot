@@ -51,26 +51,26 @@ def forecastWeather(message):
 def forecastSent(message):
     chatid = message.chat.id
     text = message.text
-    results = GetForecastWeather().get(text)
+    results = GetForecastWeather().getBot(text)
     bot.send_message(message.chat.id, results)
 
 from blueprints.qod import QuotesOfTheDay
 @bot.message_handler(commands=['qod'])
 def quotesOftheDay(message):
-    results = QuotesOfTheDay().get()
+    results = QuotesOfTheDay().getBot()
     bot.send_message(message.chat.id, results)
 
 from blueprints.track import TracksOfTheDay
 @bot.message_handler(commands=['song'])
 def forecastWeather(message):
-    results = TracksOfTheDay().get()
+    results = TracksOfTheDay().getBot()
     bot.reply_to(message, results)
 
 @bot.message_handler(commands=['all'])
 def forecastWeather(message):
-    weather_of_the_day = GetForecastWeather().get()
-    quotes_of_the_day = QuotesOfTheDay().get()
-    track_of_the_day = TracksOfTheDay().get()
+    weather_of_the_day = GetForecastWeather().getBot()
+    quotes_of_the_day = QuotesOfTheDay().getBot()
+    track_of_the_day = TracksOfTheDay().getBot()
     results = "Good morning, kawula muda!\n\n--Weather today--\n%s\n\n--Quotes of the day--\n%s\n\n--Song for you--%s" % (weather_of_the_day, quotes_of_the_day, track_of_the_day)
     bot.reply_to(message, results)
 
