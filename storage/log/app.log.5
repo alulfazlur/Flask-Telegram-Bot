@@ -1,4 +1,20 @@
-[2020-04-16 19:27:40,843] {/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /user [POST]
+[2020-04-16 19:28:30,486] {/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /user [POST]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/user/resources.py", line 31, in post
+    hash_pass = hashlib.sha512(args['password'].encode('utf-8') + salt).hexdigest()
+TypeError: can't concat str to bytes
+[2020-04-16 19:28:30,489] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:52} ERROR - REQUEST_LOG	{"status_code": 500, "method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/user?", "request": {"name": "sadsadsa", "age": 20, "sex": "male", "client_id": 1, "password": "alterraacademy"}, "response": {"message": "Internal Server Error"}}
+[2020-04-16 19:32:55,272] {/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /user [POST]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
     cursor, statement, parameters, context
@@ -20,7 +36,7 @@ Traceback (most recent call last):
     err.raise_mysql_exception(self._data)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
     raise errorclass(errno, errval)
-pymysql.err.IntegrityError: (1062, "Duplicate entry 'fast' for key 'name'")
+pymysql.err.InternalError: (1054, "Unknown column 'salt' in 'field list'")
 
 The above exception was the direct cause of the following exception:
 
@@ -35,7 +51,7 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/user/resources.py", line 35, in post
+  File "/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/user/resources.py", line 36, in post
     db.session.commit()
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
     return getattr(self.registry(), name)(*args, **kwargs)
@@ -95,10 +111,7 @@ Traceback (most recent call last):
     err.raise_mysql_exception(self._data)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
     raise errorclass(errno, errval)
-sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'fast' for key 'name'")
-[SQL: INSERT INTO user (name, age, sex, client_id, updated_at, deleted_at, password) VALUES (%(name)s, %(age)s, %(sex)s, %(client_id)s, %(updated_at)s, %(deleted_at)s, %(password)s)]
-[parameters: {'name': 'fast', 'age': '20', 'sex': 'male', 'client_id': '1', 'updated_at': None, 'deleted_at': None, 'password': None}]
-(Background on this error at: http://sqlalche.me/e/gkpj)
-[2020-04-16 19:27:40,852] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:52} ERROR - REQUEST_LOG	{"status_code": 500, "method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/user?", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1, "password": "alterraacademy"}, "response": {"message": "Internal Server Error"}}
-[2020-04-16 19:27:56,876] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:42} WARNING - REQUEST_LOG	{"status_code": 200, "method": "POST", "code": "200 OK", "uri": "/user?", "request": {"name": "andre", "age": 20, "sex": "male", "client_id": 1, "password": "alterraacademy"}, "response": {"id": 9, "name": "andre", "age": 20, "sex": "male", "client_id": 1, "password": null}}
-[2020-04-16 19:28:22,597] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:42} WARNING - REQUEST_LOG	{"status_code": 200, "method": "POST", "code": "200 OK", "uri": "/user?", "request": {"name": "andren", "age": 20, "sex": "male", "client_id": 1, "password": "alterraacademy"}, "response": {"id": 10, "name": "andren", "age": 20, "sex": "male", "client_id": 1, "password": null}}
+sqlalchemy.exc.InternalError: (pymysql.err.InternalError) (1054, "Unknown column 'salt' in 'field list'")
+[SQL: INSERT INTO user (name, age, sex, client_id, updated_at, deleted_at, password, salt) VALUES (%(name)s, %(age)s, %(sex)s, %(client_id)s, %(updated_at)s, %(deleted_at)s, %(password)s, %(salt)s)]
+[parameters: {'name': 'sadsadsa', 'age': '20', 'sex': 'male', 'client_id': '1', 'updated_at': None, 'deleted_at': None, 'password': 'b82157bfa55845c684805af454063dc2', 'salt': 'e86b8d06dfa89759a8cef5fe0e327297fed2f154d5e816e1b725381d8ebd3f8001fb436fd45c3c86d1880aa53e7ce07be7a7080a6b2979ceceaf845a61a51ebc'}]
+(Background on this error at: http://sqlalche.me/e/2j85)

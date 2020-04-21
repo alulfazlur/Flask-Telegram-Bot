@@ -4,13 +4,14 @@ from flask import Blueprint
 from flask_restful import Api, reqparse, Resource
 from flask_jwt_extended import jwt_required
 from datetime import date
+from blueprints.qod import QuotesOfTheDay
 
 bp_track = Blueprint('track', __name__)
 api = Api(bp_track)
 
 class TracksOfTheDay(Resource):
 	track_host = "https://api.spotify.com/v1/search"
-	track_apikey = "BQCP_M_uO8Pl5YtPd_5ZkVpC8Sn-ZNRzeIYejFODMFQc8M1BEb6b97aFtGYuK2u5WlzvpDRGG68fTMci6-CS4lBxMcPcIzSoA5979iZ3BIGB0oZUSZwJUzgSyh6_Pww3qouKVuHxGP7EKyffWTPFkBaAE6XD8I68D9Qpz77CTG1uHU_xfMQbrrKCD688wX4XFndM5sy7tTPqmsraGTEHVIyaTX5fxxqfbj4IbX8h4Z1YdWO62hTrmhDxAAd55isB8m1rU-fe8pibXVKhxj8j9pgNPflNug"
+	track_apikey = "BQAr7AgfpHhW2Do53JtAI1mNz5xIjdn8uVvJ2StUSMAC1MUX0gkCvYqvXefTjREKfa1nY1bNYY9htod4ECnWr7yB29RqBGznLS4FjUonvOT9BchIuJsd2mnBUbcXlZ3q4fXP5Tjsp6B9zR_nJZ3KXLsuRooRTNSVvMJW9ss6Z9jE1KM0Tq6fGomA2VYPii8EPS8NTauqlN5s3S4wQ6elOGM_3YWmjHRiHRIfRcvqC4P9lf2zyOgel7Ax4RRRE1Z05f0eP25lBuuJx6uxmJP06YWuHvWIZw"
 
 	payload = {}
 	headers = {
@@ -20,14 +21,23 @@ class TracksOfTheDay(Resource):
 	}
 
 	def get(self):
+		getqod = QuotesOfTheDay().get()
+		category = getqod[2]
+
+		if category == 'love':
+			q = 'acoustic'
+		elif category == 'funny':
+			q = 'comedy'
+		else:
+			q = 'blues'
+
 		parser = reqparse.RequestParser()
 		parser.add_argument('q', location='args', default=None)
 		parser.add_argument('type', location='args', default=None)
 		parser.add_argument('limit', location='args', default=None)
 		
 		args = parser.parse_args()
-
-		q = 'Love'
+		
 		tipe = 'track'
 		limit = 5
 
@@ -41,6 +51,7 @@ class TracksOfTheDay(Resource):
 		output = {'title': title, 'singer': singer, 'link': link}
 
 		return output, 200, {'Content-Type': 'application/json'}
+		# return title, ' - ', singer, '\n', link
 
 	def getBot(self):
 		q = 'Love'

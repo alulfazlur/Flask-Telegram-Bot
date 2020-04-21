@@ -1,4 +1,4 @@
-import telebot, time, logging, sys
+import telebot, time, logging, sys, requests
 
 TOKEN = '1112054330:AAGx68ug-fhaAhSAqoe4I92LWV6-j_gmWZA'
 bot = telebot.TeleBot(TOKEN)
@@ -6,10 +6,11 @@ knownUsers = []  # todo: save these in a file,
 userStep = {}  # so they won't reset every time the bot restarts
 
 commands = {  # command description used in the "help" command
-    'start'       : 'Get used to the bot',
-    'help'        : 'Gives you information about the available commands',
-    'forecast': "Forecast your city's weather",
-    'qod'    : 'Your Quotes of the day'
+    'start'     : 'Get used to the bot',
+    'help'      : 'Gives you information about the available commands',
+    'umbrella'  : "Should you bring the umbrella?",
+    'qod'       : 'Your quotes of the day',
+    'track'      : 'Your track of the day'
 }
 
 def listener(messages):
@@ -20,6 +21,8 @@ def listener(messages):
         if m.content_type == 'text':
             # print the sent message to the console
             print(str(m.chat.first_name) + " [" + str(m.chat.id) + "]: " + m.text)
+
+
 
 @bot.message_handler(commands=['start'])
 def command_start(m):
@@ -44,15 +47,20 @@ def command_help(m):
     bot.send_message(cid, help_text)  # send the generated help page
 
 from blueprints.weather import GetForecastWeather
-@bot.message_handler(commands=['forecast'])
+import json
+@bot.message_handler(commands=['umbrella'])
 def forecastWeather(message):
-    sent = bot.send_message(message.chat.id, 'Masukkan kotamu')
+    sent = bot.send_message(message.chat.id, 'Where are you now?')
     bot.register_next_step_handler(sent, forecastSent)
 def forecastSent(message):
     chatid = message.chat.id
     text = message.text
-    results = GetForecastWeather().getBot(text)
-    bot.send_message(message.chat.id, results)
+    get = 'http://0.0.0.0:9000/weather?q=%s' % (text)
+    req = requests.get(get)
+    res = req.json()
+    # weath = json.loads(req.data)
+    # results = GetForecastWeather().getBot(text)
+    bot.send_message(message.chat.id, 'You are in ' + text + ' now, at '+ res['date'] + '\n' + res['weather today'])
 
 from blueprints.qod import QuotesOfTheDay
 @bot.message_handler(commands=['qod'])
@@ -61,18 +69,37 @@ def quotesOftheDay(message):
     bot.send_message(message.chat.id, results)
 
 from blueprints.track import TracksOfTheDay
-@bot.message_handler(commands=['song'])
-def forecastWeather(message):
-    results = TracksOfTheDay().getBot()
-    bot.reply_to(message, results)
+# @bot.message_handler(commands=['track'])
+# def forecastWeather(message):
+#     results = TracksOfTheDay().getBot()
+#     bot.reply_to(message, results)
 
 @bot.message_handler(commands=['all'])
 def forecastWeather(message):
-    weather_of_the_day = GetForecastWeather().getBot()
-    quotes_of_the_day = QuotesOfTheDay().getBot()
-    track_of_the_day = TracksOfTheDay().getBot()
-    results = "Good morning, kawula muda!\n\n--Weather today--\n%s\n\n--Quotes of the day--\n%s\n\n--Song for you--%s" % (weather_of_the_day, quotes_of_the_day, track_of_the_day)
-    bot.reply_to(message, results)
+    sent = bot.send_message(message.chat.id, 'Where are you now?')
+    bot.register_next_step_handler(sent, all)
+def all(message):
+    result = ''
+    chatid = message.chat.id
+    text = message.text
+
+    weather_of_the_day = 'http://0.0.0.0:9000/weather?q=%s' % (text)
+    req_weather = requests.get(weather_of_the_day)
+    res_weather = req_weather.json()
+    result += '--Weather of the day--\nYou are in ' + text + ' now, at '+ res_weather['date'] + '\n' + res_weather['weather today'] + '\n'
+
+    quote_of_the_day = 'http://0.0.0.0:9000/qod?q=%s' % (text)
+    req_quote = requests.get(quote_of_the_day)
+    res_quote = req_quote.json()
+    result += '\n--Quotes of the day--\n' + res_quote['quote'] + '\n-' + res_quote['author'] + '-\n'
+
+    track_of_the_day = 'http://0.0.0.0:9000/track?q=%s' % (text)
+    req_track = requests.get(track_of_the_day)
+    res_track = req_track.json()
+    result += '\n--Track of the day--\n' + res_track['title'] + ' - ' + res_track['singer'] + '\n' + res_track['link']
+
+    # results = "Good morning, kawula muda!\n\n--Weather today--\n%s\n\n--Quotes of the day--\n%s\n\n--Song for you--%s" % (weather_of_the_day, quotes_of_the_day, track_of_the_day)
+    bot.send_message(message.chat.id, result)
 
 bot.polling()
 

@@ -46,9 +46,9 @@ class ClientResource(Resource):
     @internal_required
     def put(self, id):
         parser = reqparse.RequestParser()
-        parser.add_argument('client_key', location='json', required=True)
-        parser.add_argument('client_secret', location='json', type=str, required=True)
-        parser.add_argument('status', location='json', required=True)
+        parser.add_argument('client_key', location='json')
+        parser.add_argument('client_secret', location='json', type=str)
+        parser.add_argument('status', location='json')
         args = parser.parse_args()
 
         qry = Clients.query.get(id)

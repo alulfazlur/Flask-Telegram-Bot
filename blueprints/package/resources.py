@@ -1,23 +1,16 @@
-#semua crud
-
 from flask import Blueprint
 from flask_restful import Resource, Api, reqparse, marshal, inputs
 import json
 from .model import Package
 from blueprints import db, app
 from sqlalchemy import desc
-# import hashlib, uuid
 from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_required, get_jwt_claims
 from blueprints import internal_required
-# from . import *
 
 bp_package = Blueprint('package', __name__)
 api = Api(bp_package)
 
 class PackageResource(Resource):
-
-    def __init__(self):
-        pass
 
     @internal_required
     def get(self, id=None):
@@ -45,9 +38,9 @@ class PackageResource(Resource):
     @internal_required
     def put(self, id):
         parser = reqparse.RequestParser()
-        parser.add_argument('weather_category', location='json', required=True)
-        parser.add_argument('qod_category', location='json', required=True)
-        parser.add_argument('song_category', location='json', required=True)
+        parser.add_argument('weather_category', location='json')
+        parser.add_argument('qod_category', location='json')
+        parser.add_argument('song_category', location='json')
         args = parser.parse_args()
 
         qry = Package.query.get(id)
@@ -112,13 +105,13 @@ class PackageList(Resource):
                 else:
                     qry = qry.order_by(Package.weather_category)
 
-            if args['orderby'] == 'qod_category':
+            elif args['orderby'] == 'qod_category':
                 if args['sort'] == 'desc':
                     qry = qry.order_by(desc(Package.qod_category))
                 else:
                     qry = qry.order_by(Package.qod_category)
 
-            if args['orderby'] == 'song_category':
+            elif args['orderby'] == 'song_category':
                 if args['sort'] == 'desc':
                     qry = qry.order_by(desc(Package.song_category))
                 else:

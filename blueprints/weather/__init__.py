@@ -45,7 +45,6 @@ class GetForecastWeather(Resource):
 			hasil['city id'] = forecast['city']['id']
 			hasil['city'] = forecast['city']['name']
 			hasil['date'] = str(today)
-			lists.append(hasil)
 		
 		return hasil, 200, {'Content-Type': 'application/json'}
 

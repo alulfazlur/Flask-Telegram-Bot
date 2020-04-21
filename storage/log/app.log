@@ -1,50 +1,29 @@
-[2020-04-18 00:14:16,937]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/token/refresh?", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-18 00:14:26,945]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /token/refresh [POST]
+[2020-04-21 18:28:52,612]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /client/2 [PUT]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
-    assert meth is not None, 'Unimplemented method %r' % request.method
-AssertionError: Unimplemented method 'POST'
-[2020-04-18 00:14:26,947]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/token/refresh?", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-18 00:18:04,045]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /token/refresh [POST]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
-    assert meth is not None, 'Unimplemented method %r' % request.method
-AssertionError: Unimplemented method 'POST'
-[2020-04-18 00:18:04,048]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/token/refresh?", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-18 00:23:14,714]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /book [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
-    assert meth is not None, 'Unimplemented method %r' % request.method
-AssertionError: Unimplemented method 'GET'
-[2020-04-18 00:23:14,717]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/book?", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-18 00:40:30,411]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/book?", "request": null, "response": [{"id": 1, "title": "My Book", "isbn": "123-456-789", "writer": "Aisyah"}, {"id": 3, "title": "Change", "isbn": "123-456-788", "writer": "Fatr"}]}
-[2020-04-19 06:12:16,466]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/weather?id=1636722", "request": null, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-19 06:14:12,508]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": [{"weath": "Clouds", "desc": "overcast clouds", "time": "2020-04-19 00:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-19 03:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-19 06:00:00"}, {"weath": "Rain", "desc": "moderate rain", "time": "2020-04-19 09:00:00"}, {"weath": "Rain", "desc": "moderate rain", "time": "2020-04-19 12:00:00"}, {"weath": "Rain", "desc": "moderate rain", "time": "2020-04-19 15:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-19 18:00:00"}, {"weath": "Clouds", "desc": "overcast clouds", "time": "2020-04-19 21:00:00"}, {"weath": "Clouds", "desc": "overcast clouds", "time": "2020-04-20 00:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-20 03:00:00"}, {"weath": "Rain", "desc": "moderate rain", "time": "2020-04-20 06:00:00"}, {"weath": "Rain", "desc": "moderate rain", "time": "2020-04-20 09:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-20 12:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-20 15:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-20 18:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-20 21:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-21 00:00:00"}, {"weath": "Clouds", "desc": "few clouds", "time": "2020-04-21 03:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-21 06:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-21 09:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-21 12:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-21 15:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-21 18:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-21 21:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-22 00:00:00"}, {"weath": "Clear", "desc": "clear sky", "time": "2020-04-22 03:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-22 06:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-22 09:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-22 12:00:00"}, {"weath": "Clouds", "desc": "scattered clouds", "time": "2020-04-22 15:00:00"}, {"weath": "Clouds", "desc": "scattered clouds", "time": "2020-04-22 18:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-22 21:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-23 00:00:00"}, {"weath": "Clouds", "desc": "scattered clouds", "time": "2020-04-23 03:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-23 06:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-23 09:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-23 12:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-23 15:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-23 18:00:00"}, {"weath": "Clouds", "desc": "overcast clouds", "time": "2020-04-23 21:00:00"}]}
-[2020-04-19 06:53:04,441]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'status' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -56,11 +35,76 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 31, in get
-    if period['dt_txt'].split[0 == str(today)] and hasil['main weather'] == 'Rain':
-TypeError: 'builtin_function_or_method' object is not subscriptable
-[2020-04-19 06:53:04,445]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 06:54:55,787]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 45, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/client/resources.py", line 61, in put
+    db.session.commit()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1036, in commit
+    self.transaction.commit()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 503, in commit
+    self._prepare_impl()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 482, in _prepare_impl
+    self.session.flush()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2496, in flush
+    self._flush(objects)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2637, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    exc_value, with_traceback=exc_tb,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2597, in _flush
+    flush_context.execute()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 236, in save_obj
+    update,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 995, in _emit_update_statements
+    statement, multiparams
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1288, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1048, "Column 'status' cannot be null")
+[SQL: UPDATE clients SET client_key=%(client_key)s, client_secret=%(client_secret)s, status=%(status)s, updated_at=now() WHERE clients.id = %(clients_id)s]
+[parameters: {'client_key': 'Lula', 'client_secret': None, 'status': None, 'clients_id': 2}]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2020-04-21 18:28:52,616]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "PUT", "code": "500 INTERNAL SERVER ERROR", "uri": "/client/2?", "request": {"client_key": "Lula"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:29:27,620]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "uri": "/client/2?", "request": {"client_key": "Lula", "client_secret": "password", "status": false}, "response": {"id": 2, "client_key": "Lula", "client_secret": "password", "status": "False"}}
+[2020-04-21 18:29:53,841]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "DELETE", "code": "200 OK", "uri": "/client/2?", "request": null, "response": {"status": "DELETED"}}
+[2020-04-21 18:34:41,271]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /pack [POST]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -72,11 +116,15 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 31, in get
-    if period['dt_txt'].split[0] == str(today) and period['weather']['main'] == 'Rain':
-TypeError: 'builtin_function_or_method' object is not subscriptable
-[2020-04-19 06:54:55,791]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 06:56:14,749]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 39, in wrapper
+    verify_jwt_in_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 32, in verify_jwt_in_request
+    jwt_data, jwt_header = _decode_jwt_from_request(request_type='access')
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 314, in _decode_jwt_from_request
+    raise NoAuthorizationError(errors[0])
+flask_jwt_extended.exceptions.NoAuthorizationError: Missing Authorization Header
+[2020-04-21 18:34:41,273]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/pack?", "request": {"weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:34:46,514]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /pack [POST]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -88,11 +136,15 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 24, in get
-    today = date.today()
-UnboundLocalError: local variable 'date' referenced before assignment
-[2020-04-19 06:56:14,753]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 06:56:47,241]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 45, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/package/resources.py", line 37, in post
+    package = Package(args['weather_category'], args['qod_category'], args['song_category'])
+TypeError: __init__() takes 2 positional arguments but 4 were given
+[2020-04-21 18:34:46,515]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/pack?", "request": {"weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:35:09,662]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/client?", "request": null, "response": [{"id": 1, "client_key": "Alul", "client_secret": "e46d7e312a4a6f7935338d8e08df15ba1d757c71716c9c7d7c7b2e5f3e7796b04aa3086c348c7af40944edb0c7294c1e6b2be9754ed301dc16755334d9c2f58f", "status": "True"}]}
+[2020-04-21 18:35:22,986]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/token?client_key=Alul&client_secret=password", "request": null, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODc0Njg5MjIsIm5iZiI6MTU4NzQ2ODkyMiwianRpIjoiNWY4NzViNzItYTczYi00YTRjLTljZWItYmMxNDhhODlkNDkxIiwiZXhwIjoxNTg3NTU1MzIyLCJpZGVudGl0eSI6IkFsdWwiLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MSwiY2xpZW50X2tleSI6IkFsdWwiLCJzdGF0dXMiOiJUcnVlIiwiaWRlbnRpZmllciI6ImFsdGFiYXRjaDUifX0.qn0Fz3Ll2VfryX2g8JV8Jrj1bpLLDf_yBnJlOYz9KnA"}}
+[2020-04-21 18:36:27,086]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /pack [POST]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -104,11 +156,13 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 24, in get
-    today = date.today()
-UnboundLocalError: local variable 'date' referenced before assignment
-[2020-04-19 06:56:47,244]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 06:57:38,753]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 45, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/package/resources.py", line 37, in post
+    package = Package(args['weather_category'], args['qod_category'], args['song_category'])
+TypeError: __init__() takes 2 positional arguments but 4 were given
+[2020-04-21 18:36:27,087]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/pack?", "request": {"weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:38:02,869]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /pack [POST]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -120,11 +174,13 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 32, in get
-    if tgl[0] == str(today) and period['weather']['main'] == 'Rain':
-TypeError: list indices must be integers or slices, not str
-[2020-04-19 06:57:38,759]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 06:58:04,816]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 45, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/package/resources.py", line 37, in post
+    package = Package(args['weather_category'], args['qod_category'], args['song_category'])
+TypeError: __init__() takes 2 positional arguments but 4 were given
+[2020-04-21 18:38:02,875]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/pack?", "request": {"weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:39:32,062]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /pack [POST]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -136,11 +192,13 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 32, in get
-    if str(tgl[0]) == str(today) and period['weather']['main'] == 'Rain':
-TypeError: list indices must be integers or slices, not str
-[2020-04-19 06:58:04,821]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 06:58:33,107]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 45, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/package/resources.py", line 37, in post
+    package = Package(args['weather_category'], args['qod_category'], args['song_category'])
+TypeError: __init__() takes 2 positional arguments but 4 were given
+[2020-04-21 18:39:32,063]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/pack?", "request": {"weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:40:13,937]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /pack [POST]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -152,14 +210,13 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 32, in get
-    if tgl[0] == str(today) and str(period['weather']['main']) == 'Rain':
-TypeError: list indices must be integers or slices, not str
-[2020-04-19 06:58:33,112]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 07:00:00,288]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": [{"weather today": "Sometimes rain"}, {"weather today": "Sometimes rain"}, {"weather today": "Sometimes rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}]}
-[2020-04-19 07:00:41,700]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": [{"weather today": "Sun bright all day"}, {"weather today": "Sometimes rain"}, {"weather today": "Sometimes rain"}, {"weather today": "Sometimes rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}]}
-[2020-04-19 07:01:22,221]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": [{"weather today": "Mostly rain"}]}
-[2020-04-19 07:07:08,970]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 45, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/package/resources.py", line 37, in post
+    package = Package(args['weather_category'], args['qod_category'], args['song_category'])
+TypeError: __init__() takes 2 positional arguments but 4 were given
+[2020-04-21 18:40:13,938]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/pack?", "request": {"weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:41:14,155]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /pack [POST]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -171,39 +228,13 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 44, in get
-    hasil['city id'] = forecast['list']['city']['id']
-TypeError: list indices must be integers or slices, not str
-[2020-04-19 07:07:08,975]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 07:08:58,208]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": [{"weather today": "Mostly rain", "city id": 1636722, "city": "Malang"}]}
-[2020-04-19 07:09:51,293]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": {"weather today": "Mostly rain", "city id": 1636722, "city": "Malang"}}
-[2020-04-19 07:10:44,567]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
-Traceback (most recent call last):
-  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 472, in wrapper
-    return self.make_response(data, code, headers=headers)
-  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 501, in make_response
-    resp = self.representations[mediatype](data, *args, **kwargs)
-  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/representations/json.py", line 21, in output_json
-    dumped = dumps(data, **settings) + "\n"
-  File "/usr/lib/python3.6/json/__init__.py", line 231, in dumps
-    return _default_encoder.encode(obj)
-  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
-    o.__class__.__name__)
-TypeError: Object of type 'date' is not JSON serializable
-[2020-04-19 07:10:44,572]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 07:11:26,106]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": {"weather today": "Mostly rain", "city id": 1636722, "city": "Malang", "date": "2020-04-19"}}
-[2020-04-19 07:15:12,424]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": {"weather today": "Mostly rain", "city id": 1636722, "city": "Malang", "date": "2020-04-19"}}
-[2020-04-19 07:16:47,235]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": {"weather today": "Mostly rain", "city id": 1636722, "city": "Malang", "date": "2020-04-19"}}
-[2020-04-19 08:08:31,690]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Mostly rain, you should bring your umbrella!", "city id": 1636722, "city": "Malang", "date": "2020-04-19"}}
-[2020-04-19 09:12:19,866]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 45, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/package/resources.py", line 34, in post
+    package = Package(args['weather_category'], args['qod_category'], args['song_category'])
+TypeError: __init__() takes 2 positional arguments but 4 were given
+[2020-04-21 18:41:14,161]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/pack?", "request": {"weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:43:07,854]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /pack [POST]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -215,11 +246,14 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 29, in get
-    for period in forecast['list']:
-KeyError: 'list'
-[2020-04-19 09:12:19,868]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?category=love&language=en", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 09:12:26,671]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 45, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/package/resources.py", line 34, in post
+    package = Package(args['weather_category'], args['qod_category'], args['song_category'])
+TypeError: __init__() takes 2 positional arguments but 4 were given
+[2020-04-21 18:43:07,856]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/pack?", "request": {"weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:45:28,937]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "POST", "code": "200 OK", "uri": "/pack?", "request": {"weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}, "response": {"id": 1, "weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}}
+[2020-04-21 18:46:09,529]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /pack [GET]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -231,11 +265,17 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/qod/__init__.py", line 24, in get
-    qod['quote'] = qod_req['quotes']['quote']
-KeyError: 'quotes'
-[2020-04-19 09:12:26,674]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?category=love&language=en", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 09:14:30,087]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 39, in wrapper
+    verify_jwt_in_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 32, in verify_jwt_in_request
+    jwt_data, jwt_header = _decode_jwt_from_request(request_type='access')
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 314, in _decode_jwt_from_request
+    raise NoAuthorizationError(errors[0])
+flask_jwt_extended.exceptions.NoAuthorizationError: Missing Authorization Header
+[2020-04-21 18:46:09,532]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/pack?", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:46:12,734]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/pack?", "request": null, "response": [{"id": 1, "weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}]}
+[2020-04-21 18:46:17,217]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/pack/1?", "request": null, "response": {"id": 1, "weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}}
+[2020-04-21 18:47:02,748]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /pack/1 [PUT]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -247,11 +287,17 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/qod/__init__.py", line 24, in get
-    qod['quote'] = qod_req['contents']['quotes']['quote']
-TypeError: list indices must be integers or slices, not str
-[2020-04-19 09:14:30,091]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?category=love&language=en", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 09:18:52,266]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 39, in wrapper
+    verify_jwt_in_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 32, in verify_jwt_in_request
+    jwt_data, jwt_header = _decode_jwt_from_request(request_type='access')
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 314, in _decode_jwt_from_request
+    raise NoAuthorizationError(errors[0])
+flask_jwt_extended.exceptions.NoAuthorizationError: Missing Authorization Header
+[2020-04-21 18:47:02,750]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "PUT", "code": "500 INTERNAL SERVER ERROR", "uri": "/pack/1?", "request": {"weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Love"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:47:32,400]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "uri": "/pack/1?", "request": {"weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Love"}, "response": {"id": 1, "weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Love"}}
+[2020-04-21 18:47:39,767]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "POST", "code": "200 OK", "uri": "/pack?", "request": {"weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}, "response": {"id": 2, "weather_category": "Full-day rain", "qod_category": "Love", "song_category": "Accoustic"}}
+[2020-04-21 18:47:54,979]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /pack/2 [DELETE]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -263,12 +309,26 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/qod/__init__.py", line 24, in get
-    qod['quote'] = qod_req['contents']['quotes']['quote']
-TypeError: list indices must be integers or slices, not str
-[2020-04-19 09:18:52,268]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?category=life&language=en", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 09:19:32,728]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?category=life&language=en", "request": null, "response": {"success": {"total": 1}, "contents": {"quotes": [{"quote": "Life is a game, play it.", "length": "24", "author": "Mother Theresa", "tags": ["game", "life"], "category": "life", "language": "en", "date": "2020-04-19", "permalink": "https://theysaidso.com/quote/mother-theresa-life-is-a-game-play-it", "id": "MAzWc3xqHX6gBtf8s_MYPQeF", "background": "https://theysaidso.com/img/qod/qod-life.jpg", "title": "Quote of the day about life"}]}, "baseurl": "https://theysaidso.com", "copyright": {"year": 2022, "url": "https://theysaidso.com"}}}
-[2020-04-19 09:23:16,316]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 39, in wrapper
+    verify_jwt_in_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 32, in verify_jwt_in_request
+    jwt_data, jwt_header = _decode_jwt_from_request(request_type='access')
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 314, in _decode_jwt_from_request
+    raise NoAuthorizationError(errors[0])
+flask_jwt_extended.exceptions.NoAuthorizationError: Missing Authorization Header
+[2020-04-21 18:47:54,981]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "DELETE", "code": "500 INTERNAL SERVER ERROR", "uri": "/pack/2?", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:47:59,791]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "DELETE", "code": "200 OK", "uri": "/pack/2?", "request": null, "response": {"status": "DELETED"}}
+[2020-04-21 19:21:31,806]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 19:30:52,008]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 19:31:53,636]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 19:36:29,836]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 19:38:12,444]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 19:42:08,544]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:16:18,959]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:18:25,726]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:19:54,544]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:20:33,278]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:20:52,065]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -280,220 +340,449 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/Documents/Project/blueprints/qod/__init__.py", line 25, in get
-    qod['quote'] = qod_req['contents']['quotes']['quote']
-TypeError: list indices must be integers or slices, not str
-[2020-04-19 09:23:16,319]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?category=life&language=en", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 09:24:40,155]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?category=life&language=en", "request": null, "response": {"success": {"total": 1}, "contents": {"quotes": [{"quote": "Life is a game, play it.", "length": "24", "author": "Mother Theresa", "tags": ["game", "life"], "category": "life", "language": "en", "date": "2020-04-19", "permalink": "https://theysaidso.com/quote/mother-theresa-life-is-a-game-play-it", "id": "MAzWc3xqHX6gBtf8s_MYPQeF", "background": "https://theysaidso.com/img/qod/qod-life.jpg", "title": "Quote of the day about life"}]}, "baseurl": "https://theysaidso.com", "copyright": {"year": 2022, "url": "https://theysaidso.com"}}}
-[2020-04-19 09:26:31,679]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?category=life&language=en", "request": null, "response": {"quote": "Life is a game, play it.", "author": "Mother Theresa"}}
-[2020-04-19 11:09:05,784]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+  File "/home/alta11/APP-Alay/blueprints/weather/__init__.py", line 34, in get
+    hasil['main weather'] = period['weather'][0]['main']
+TypeError: 'str' object does not support item assignment
+[2020-04-21 20:20:52,070]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:21:40,039]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
     resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
     return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 28, in get
-    output['judul'] = track_req['tracks']['items'][0]['album']['name']
-KeyError: 'tracks'
-[2020-04-19 11:09:05,788]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-19 11:10:45,041]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+  File "/home/alta11/APP-Alay/blueprints/weather/__init__.py", line 34, in get
+    hasil['main weather'] = period['weather'][0]['main']
+TypeError: 'str' object does not support item assignment
+[2020-04-21 20:21:40,040]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:23:57,017]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
     resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
     return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 28, in get
-    output['judul'] = track_req['tracks']['items'][0]['album']['name']
-KeyError: 'tracks'
-[2020-04-19 11:10:45,045]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-19 11:12:12,334]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?", "request": {}, "response": {"error": {"status": 401, "message": "No token provided"}}}
-[2020-04-19 11:13:28,368]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?", "request": {}, "response": {"error": {"status": 401, "message": "No token provided"}}}
-[2020-04-19 11:53:16,854]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?", "request": null, "response": {"error": {"status": 401, "message": "No token provided"}}}
-[2020-04-19 12:12:57,372]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?keywords=Ardhito&type=track", "request": null, "response": {"error": {"status": 401, "message": "No token provided"}}}
-[2020-04-19 12:40:16,346]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+  File "/home/alta11/APP-Alay/blueprints/weather/__init__.py", line 34, in get
+    hasil['main weather'] = period['weather'][0]['main']
+TypeError: 'str' object does not support item assignment
+[2020-04-21 20:23:57,018]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:24:05,146]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
     resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
     return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 29, in get
-    rq = requests.get(self.track_host, params={'q': args['q'], 'type': args['type']})
-AttributeError: 'TracksOfTheDay' object has no attribute 'track_host'
-[2020-04-19 12:40:16,350]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-19 12:41:03,839]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+  File "/home/alta11/APP-Alay/blueprints/weather/__init__.py", line 34, in get
+    hasil['main weather'] = period['weather'][0]['main']
+TypeError: 'str' object does not support item assignment
+[2020-04-21 20:24:05,151]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:25:12,015]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
     resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
     return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 36, in get
-    output['judul'] = track_req['tracks']['items'][0]['album']['name']
-KeyError: 'tracks'
-[2020-04-19 12:41:03,843]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-19 12:42:26,911]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+  File "/home/alta11/APP-Alay/blueprints/weather/__init__.py", line 34, in get
+    hasil['main weather'] = period['weather'][0]['main']
+TypeError: 'str' object does not support item assignment
+[2020-04-21 20:25:12,019]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:25:41,535]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"city": "Malang", "result": "Midrain"}}
+[2020-04-21 20:26:22,567]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"city": "Malang", "result": "Midrain"}}
+[2020-04-21 20:27:26,541]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"city": "Malang", "result": "Midrain"}}
+[2020-04-21 20:28:47,199]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"city": "Malang", "result": "Midrain"}}
+[2020-04-21 20:30:28,015]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"city": "Malang", "result": "Midrain"}}
+[2020-04-21 20:30:41,965]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:30:54,394]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:33:09,276]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:45:40,024]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
     resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
     return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 36, in get
-    output['judul'] = item['tracks']['items'][0]['album']['name']
-TypeError: string indices must be integers
-[2020-04-19 12:42:26,913]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-19 12:43:48,998]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+  File "/home/alta11/APP-Alay/blueprints/track/__init__.py", line 31, in get
+    getqod = QuotesOfTheDay.get().json()
+TypeError: get() missing 1 required positional argument: 'self'
+[2020-04-21 20:45:40,026]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:48:08,728]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
     resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
     return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 36, in get
-    output['judul'] = track_req['tracks']['items'][0]['album']['name']
-KeyError: 'tracks'
-[2020-04-19 12:43:49,004]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-19 12:44:09,563]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+  File "/home/alta11/APP-Alay/blueprints/track/__init__.py", line 31, in get
+    getqod = QuotesOfTheDay.get()
+TypeError: get() missing 1 required positional argument: 'self'
+[2020-04-21 20:48:08,733]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:48:55,808]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
     resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
     return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 36, in get
-    output['judul'] = track_req['tracks']['items'][0]['album']['name']
-KeyError: 'tracks'
-[2020-04-19 12:44:09,566]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-19 12:44:34,616]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?", "request": {}, "response": {"error": {"status": 401, "message": "No token provided"}}}
-[2020-04-19 13:10:25,205]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+  File "/home/alta11/APP-Alay/blueprints/qod/__init__.py", line 18, in get
+    getweather = GetForecastWeather().get().json()
+AttributeError: 'tuple' object has no attribute 'json'
+[2020-04-21 20:48:55,810]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:50:34,021]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:51:20,767]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:51:27,276]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
     resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
     return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 29, in get
-    rq = requests.get(self.track_host, params={'q': args['q'], 'type': args['type'], 'limit': args['limit']}, headers=self.headers, data=self.payload)
-KeyError: 'limit'
-[2020-04-19 13:10:25,207]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 13:11:15,481]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
-[2020-04-19 13:33:32,708]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": [{"judul": "bitterlove"}, {"judul": "bitterlove"}, {"judul": "bitterlove"}, {"judul": "bitterlove"}, {"judul": "bitterlove"}]}
-[2020-04-19 13:56:28,464]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
-[2020-04-19 13:59:53,576]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-19 14:00:17,047]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+  File "/home/alta11/APP-Alay/blueprints/qod/__init__.py", line 19, in get
+    get = getweather.json()
+AttributeError: 'tuple' object has no attribute 'json'
+[2020-04-21 20:51:27,280]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:52:21,049]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
     resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
     return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 33, in get
-    singer = track_req['tracks']['items'][0]['artists']['name']
-TypeError: list indices must be integers or slices, not str
-[2020-04-19 14:00:17,050]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 14:16:10,334]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
-[2020-04-19 14:19:11,681]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+  File "/home/alta11/APP-Alay/blueprints/qod/__init__.py", line 20, in get
+    weather = getweather['weather today']
+TypeError: tuple indices must be integers or slices, not str
+[2020-04-21 20:52:21,053]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:53:36,265]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:53:39,680]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
     resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
     return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 33, in get
-    penyanyi = track_req['tracks']['items'][0]['artists']['name']
-TypeError: list indices must be integers or slices, not str
-[2020-04-19 14:19:11,685]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 14:19:37,309]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
-[2020-04-19 14:22:34,639]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
-[2020-04-19 14:22:57,502]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove", "penyanyi": "Ardhito Pramono"}}
-[2020-04-19 14:24:55,322]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+  File "/home/alta11/APP-Alay/blueprints/qod/__init__.py", line 19, in get
+    get = getweather.json()
+AttributeError: 'tuple' object has no attribute 'json'
+[2020-04-21 20:53:39,684]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:54:28,763]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
     resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
     return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 34, in get
-    link = track_req['tracks']['items'][0]['album']['external_url']['spotify']
-KeyError: 'external_url'
-[2020-04-19 14:24:55,325]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 14:25:41,888]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+  File "/home/alta11/APP-Alay/blueprints/qod/__init__.py", line 20, in get
+    weather = get[0]
+NameError: name 'get' is not defined
+[2020-04-21 20:54:28,766]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:54:50,624]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?q=Malang", "request": null, "response": {"quote": "Persistence is very important. You should not give up unless you are forced to give up.", "author": "Elon Musk", "category": ["inspire"]}}
+[2020-04-21 20:55:58,755]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:56:07,997]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?q=Malang", "request": null, "response": {"quote": "Persistence is very important. You should not give up unless you are forced to give up.", "author": "Elon Musk", "category": "inspire"}}
+[2020-04-21 20:56:12,650]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 20:56:25,520]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
 Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
     resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
     return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 34, in get
-    link = track_req['tracks']['items'][0]['external_url']['spotify']
-KeyError: 'external_url'
-[2020-04-19 14:25:41,891]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-19 14:26:19,174]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove", "penyanyi": "Ardhito Pramono", "link": "https://open.spotify.com/track/74OLXYsvpfmSgPCMMi898K"}}
-[2020-04-19 14:27:17,552]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove", "penyanyi": "Ardhito Pramono", "link": "https://open.spotify.com/track/74OLXYsvpfmSgPCMMi898K"}}
-[2020-04-19 14:27:38,125]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"title": "bitterlove", "singer": "Ardhito Pramono", "link": "https://open.spotify.com/track/74OLXYsvpfmSgPCMMi898K"}}
-[2020-04-19 18:40:11,631]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?category=life&language=en", "request": null, "response": {"quote": "Life is a game, play it.", "author": "Mother Theresa"}}
-[2020-04-19 18:40:29,756]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?category=life&language=en", "request": null, "response": {"quote": "Life is a game, play it.", "author": "Mother Theresa"}}
-[2020-04-19 18:40:34,952]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Mostly rain, you should bring your umbrella!", "city id": 1636722, "city": "Malang", "date": "2020-04-19"}}
+  File "/home/alta11/APP-Alay/blueprints/track/__init__.py", line 31, in get
+    getqod = QuotesOfTheDay.get()
+TypeError: get() missing 1 required positional argument: 'self'
+[2020-04-21 20:56:25,523]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:57:46,190]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/track/__init__.py", line 24, in get
+    getqod = QuotesOfTheDay.get()
+TypeError: get() missing 1 required positional argument: 'self'
+[2020-04-21 20:57:46,192]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:58:47,059]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/util/connection.py", line 64, in create_connection
+    for res in socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM):
+  File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/adapters.py", line 370, in send
+    timeout=timeout
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 597, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/util/connection.py", line 64, in create_connection
+    for res in socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM):
+  File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/track/__init__.py", line 24, in get
+    getqod = QuotesOfTheDay().get()
+  File "/home/alta11/APP-Alay/blueprints/qod/__init__.py", line 32, in get
+    rq = requests.get(self.qod_host, params={'category': category})
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/api.py", line 69, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/api.py", line 50, in request
+    response = session.request(method=method, url=url, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))
+[2020-04-21 20:58:47,067]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:58:58,734]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/util/connection.py", line 64, in create_connection
+    for res in socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM):
+  File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/adapters.py", line 370, in send
+    timeout=timeout
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 597, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/util/retry.py", line 245, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/packages/six.py", line 309, in reraise
+    raise value.with_traceback(tb)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 341, in _make_request
+    self._validate_conn(conn)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py", line 761, in _validate_conn
+    conn.connect()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connection.py", line 204, in connect
+    conn = self._new_conn()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/connection.py", line 134, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/packages/urllib3/util/connection.py", line 64, in create_connection
+    for res in socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM):
+  File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+requests.packages.urllib3.exceptions.ProtocolError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/track/__init__.py", line 24, in get
+    getqod = QuotesOfTheDay().get()
+  File "/home/alta11/APP-Alay/blueprints/qod/__init__.py", line 32, in get
+    rq = requests.get(self.qod_host, params={'category': category})
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/api.py", line 69, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/api.py", line 50, in request
+    response = session.request(method=method, url=url, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/requests/adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))
+[2020-04-21 20:58:58,737]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 20:59:35,083]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/track/__init__.py", line 40, in get
+    title = track_req['tracks']['items'][0]['album']['name']
+IndexError: list index out of range
+[2020-04-21 20:59:35,086]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 21:15:58,130]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/track/__init__.py", line 40, in get
+    title = track_req['tracks']['items'][0]['album']['name']
+IndexError: list index out of range
+[2020-04-21 21:15:58,132]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 21:16:46,176]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/track/__init__.py", line 40, in get
+    title = track_req['tracks']['items'][0]['album']['name']
+IndexError: list index out of range
+[2020-04-21 21:16:46,179]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 21:30:59,005]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/track/__init__.py", line 45, in get
+    rq = requests.get(self.track_host, params={'q': q, 'type': tipe, 'limit': limit}, headers=self.headers, data=self.payload)
+NameError: name 'q' is not defined
+[2020-04-21 21:30:59,008]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 21:31:32,248]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Malang", "request": null, "response": {"title": "Luka Cinta & Merdeka", "singer": "Glenn Fredly", "link": "https://open.spotify.com/track/6bPNSq2DMserHp5SRekTDs"}}
+[2020-04-21 21:31:58,475]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 21:32:00,827]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?q=Malang", "request": null, "response": {"quote": "Persistence is very important. You should not give up unless you are forced to give up.", "author": "Elon Musk", "category": "inspire"}}
+[2020-04-21 21:32:05,806]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Malang", "request": null, "response": {"title": "Luka Cinta & Merdeka", "singer": "Glenn Fredly", "link": "https://open.spotify.com/track/6bPNSq2DMserHp5SRekTDs"}}
+[2020-04-21 21:32:34,126]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "city id": 1636722, "city": "Malang", "date": "2020-04-21"}}
+[2020-04-21 21:32:35,846]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?q=Malang", "request": null, "response": {"quote": "Persistence is very important. You should not give up unless you are forced to give up.", "author": "Elon Musk", "category": "inspire"}}
+[2020-04-21 21:32:38,154]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Malang", "request": null, "response": {"title": "Luka Cinta & Merdeka", "singer": "Glenn Fredly", "link": "https://open.spotify.com/track/6bPNSq2DMserHp5SRekTDs"}}

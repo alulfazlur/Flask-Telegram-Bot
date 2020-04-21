@@ -1,840 +1,5 @@
-[2020-04-17 14:41:36,432]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:58} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/auth?client_key=abc&client_secret=saj1233", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODcxMDkyOTYsIm5iZiI6MTU4NzEwOTI5NiwianRpIjoiMDA0M2MyMWMtYjljMi00ODUyLWJkYTQtMjhhZmYzOTc4YzBmIiwiZXhwIjoxNTg3MTk1Njk2LCJpZGVudGl0eSI6ImFiYyIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjo2LCJjbGllbnRfa2V5IjoiYWJjIiwic3RhdHVzIjoiVHJ1ZSJ9fQ.oRB4ySqmw4xHej6HfgzadIUz2ggtKXCOTnQge1SrbWI"}}
-[2020-04-17 14:41:59,148]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:67} ERROR - REQUEST_LOG	{"method": "GET", "code": "405 METHOD NOT ALLOWED", "uri": "/auth/refresh?", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-17 14:42:25,288]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:58} WARNING - REQUEST_LOG	{"method": "POST", "code": "200 OK", "uri": "/auth/refresh?", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODcxMDkzNDUsIm5iZiI6MTU4NzEwOTM0NSwianRpIjoiNTZjYmY2NDMtMGQzOS00NTQ0LTkxNmItOWNhN2U4NmRjZmU4IiwiZXhwIjoxNTg3MTk1NzQ1LCJpZGVudGl0eSI6ImFiYyIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImNsYWltcyI6ImFiYyIsImlkZW50aWZpZXIiOiJBVEEtQkFUQ0g1In19.nV8H8e7jAdHfJsiEEPN3hIyzLEfvG8K0CuoNn6IGZMA"}}
-[2020-04-17 15:47:16,701]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "POST", "code": "200 OK", "uri": "/auth/refresh?", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODcxMTMyMzYsIm5iZiI6MTU4NzExMzIzNiwianRpIjoiMjVjZDNmZDMtMzViNy00YmZmLWJlNDEtZjQ2YmY1MGM5OTUwIiwiZXhwIjoxNTg3MTk5NjM2LCJpZGVudGl0eSI6ImFiYyIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyJ9.dYTrcWwN1ANHzguMWEhe9Nw4YYZDh8yGv1CFy2YE7nE"}}
-[2020-04-17 16:17:55,878]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "405 METHOD NOT ALLOWED", "uri": "/auth/refresh?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-17 16:21:00,325]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "405 METHOD NOT ALLOWED", "uri": "/auth/refresh?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-17 16:21:20,424]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "405 METHOD NOT ALLOWED", "uri": "/auth/refresh?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent"}, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-17 16:21:32,753]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/auth/?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent"}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-17 16:24:15,892]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/auth/?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent"}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-17 16:29:16,247]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/auth/?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent"}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-17 16:37:42,989]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/auth/?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent"}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-17 16:39:50,232]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/auth/?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent"}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-17 16:40:37,220]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/auth/?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent"}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-17 16:41:29,857]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/auth/?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent"}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-17 16:41:37,462]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "400 BAD REQUEST", "uri": "/auth?", "request": {}, "response": {"message": {"client_key": "Missing required parameter in the query string"}}}
-[2020-04-17 16:41:47,465]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/auth?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent"}, "response": null}
-[2020-04-17 16:45:46,876]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/auth?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent"}, "response": null}
-[2020-04-17 16:47:01,039]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "400 BAD REQUEST", "uri": "/auth?", "request": {}, "response": {"message": {"client_key": "Missing required parameter in the query string"}}}
-[2020-04-17 16:47:05,802]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/auth?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent"}, "response": null}
-[2020-04-17 16:49:37,218]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/auth?", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-17 17:32:23,939]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/auth?", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-17 17:32:29,204]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "400 BAD REQUEST", "uri": "/auth?", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": {"client_key": "Missing required parameter in the query string"}}}
-[2020-04-17 17:32:35,360]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/auth?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": null}
-[2020-04-17 17:32:57,742]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/client?", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": [{"id": 1, "client_key": "abcde123", "client_secret": "c6104da487ad9ea4c814c499bb4ba1afaef990fb07f7c7408f9226759466a58f523c570fea81d8b5d0a568d9addb3a3d2227cc21eb72e153e0be1b322326698c", "status": "True"}, {"id": 2, "client_key": "abcde1234", "client_secret": "22c00f0399adb6f87c998871b1f40b27b2079b348ec46c9731bac783a4c8ad6d5d42592bda406635a3e3508389f9cad051f1dd84b98c34f591deed5955e725a5", "status": "True"}, {"id": 3, "client_key": "abcde1235", "client_secret": "8faaecc88b4e04a1ee320a0c4adf5ed74c095dd4b0937abd6b296b8a03e8cd214e441768bc9ede7342a70e91f0600ad76b41e1a2b9e9908c2fe119c36981379b", "status": "True"}, {"id": 5, "client_key": "abcde2356", "client_secret": "a88fe381df52191fc3ab869aa6bb7370cb1d64f7657884decc15d2dad1755dd2edf9c30df0f01f268f05af8d31da830f50d4693a51971b5a60fefb364e78b206", "status": "True"}, {"id": 6, "client_key": "abc", "client_secret": "060cd3d9dc7faf0ba6dfb543b6102263021007c459579620ad3e1312a3790b3197758ca2fa98d42696179060118ca48bd1c09db288061511476444ee3ea561ef", "status": "True"}]}
-[2020-04-17 17:33:46,006]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/auth?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODcxMTk2MjYsIm5iZiI6MTU4NzExOTYyNiwianRpIjoiZjI4M2FmNjgtOTk4OS00ZDFmLTgwY2UtMGYxN2U3MDNiZTQ2IiwiZXhwIjoxNTg3MjA2MDI2LCJpZGVudGl0eSI6ImludGVybmFsIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWRlbnRpZmllciI6ImFsdGFiYXRjaDUiLCJzdGF0dXMiOnRydWV9fQ.9yBLYlottcaxlR8N93K7B-s9qQSkDgly5vi3ixaWh0M"}}
-[2020-04-17 17:36:27,006]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather/ip [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 107, in wrapper
-    verify_jwt_in_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 32, in verify_jwt_in_request
-    jwt_data, jwt_header = _decode_jwt_from_request(request_type='access')
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 314, in _decode_jwt_from_request
-    raise NoAuthorizationError(errors[0])
-flask_jwt_extended.exceptions.NoAuthorizationError: Missing Authorization Header
-[2020-04-17 17:36:27,010]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather/ip?", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 17:36:37,210]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/weather?", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-17 17:37:02,746]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/client?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": [{"id": 1, "client_key": "abcde123", "client_secret": "c6104da487ad9ea4c814c499bb4ba1afaef990fb07f7c7408f9226759466a58f523c570fea81d8b5d0a568d9addb3a3d2227cc21eb72e153e0be1b322326698c", "status": "True"}, {"id": 2, "client_key": "abcde1234", "client_secret": "22c00f0399adb6f87c998871b1f40b27b2079b348ec46c9731bac783a4c8ad6d5d42592bda406635a3e3508389f9cad051f1dd84b98c34f591deed5955e725a5", "status": "True"}, {"id": 3, "client_key": "abcde1235", "client_secret": "8faaecc88b4e04a1ee320a0c4adf5ed74c095dd4b0937abd6b296b8a03e8cd214e441768bc9ede7342a70e91f0600ad76b41e1a2b9e9908c2fe119c36981379b", "status": "True"}, {"id": 5, "client_key": "abcde2356", "client_secret": "a88fe381df52191fc3ab869aa6bb7370cb1d64f7657884decc15d2dad1755dd2edf9c30df0f01f268f05af8d31da830f50d4693a51971b5a60fefb364e78b206", "status": "True"}, {"id": 6, "client_key": "abc", "client_secret": "060cd3d9dc7faf0ba6dfb543b6102263021007c459579620ad3e1312a3790b3197758ca2fa98d42696179060118ca48bd1c09db288061511476444ee3ea561ef", "status": "True"}]}
-[2020-04-17 17:37:09,528]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "POST", "code": "200 OK", "uri": "/client?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"id": 7, "client_key": "abc", "client_secret": "31e646d802907a3270311e973bdd12d28b0623ff897741544ecce95fa5e524156b2a8034ffce71b62ca87c41ebd652fad6d8eb512442f9b064a381d4301b61a2", "status": "True"}}
-[2020-04-17 17:37:23,926]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/auth?", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-17 17:37:27,153]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/auth?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-17 17:37:44,807]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/auth?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODcxMTk4NjQsIm5iZiI6MTU4NzExOTg2NCwianRpIjoiYTlmN2RjOTEtMDljMy00NDJjLTkzNmUtMDEwZTQyMWMzMjRmIiwiZXhwIjoxNTg3MjA2MjY0LCJpZGVudGl0eSI6ImludGVybmFsIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWRlbnRpZmllciI6ImFsdGFiYXRjaDUiLCJzdGF0dXMiOnRydWV9fQ.7EvV53JQC2MAbVf3ZASX31Z_VBZZ8c6UQKslrDjIS0o"}}
-[2020-04-17 17:38:32,825]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather/ip [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
-    return fn(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/weather/__init__.py", line 24, in get
-    rq_post = requests.post('endpoint', json={'ip':'192.168.0.1'})
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/requests/api.py", line 119, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/requests/api.py", line 61, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/requests/sessions.py", line 516, in request
-    prep = self.prepare_request(req)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/requests/sessions.py", line 459, in prepare_request
-    hooks=merge_hooks(request.hooks, self.hooks),
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/requests/models.py", line 314, in prepare
-    self.prepare_url(url, params)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/requests/models.py", line 388, in prepare_url
-    raise MissingSchema(error)
-requests.exceptions.MissingSchema: Invalid URL 'endpoint': No schema supplied. Perhaps you meant http://endpoint?
-[2020-04-17 17:38:32,828]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather/ip?ip=202.58.181.182", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 17:39:14,706]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather/ip [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
-    return fn(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/weather/__init__.py", line 24, in get
-    rq_post = requests.post('endpoint', json={'ip':'192.168.0.1'})
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/requests/api.py", line 119, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/requests/api.py", line 61, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/requests/sessions.py", line 516, in request
-    prep = self.prepare_request(req)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/requests/sessions.py", line 459, in prepare_request
-    hooks=merge_hooks(request.hooks, self.hooks),
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/requests/models.py", line 314, in prepare
-    self.prepare_url(url, params)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/requests/models.py", line 388, in prepare_url
-    raise MissingSchema(error)
-requests.exceptions.MissingSchema: Invalid URL 'endpoint': No schema supplied. Perhaps you meant http://endpoint?
-[2020-04-17 17:39:14,707]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather/ip?ip=115.178.239.169", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 17:40:09,507]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather/ip [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
-    return fn(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/weather/__init__.py", line 27, in get
-    rq = requests.get(self.wio_host + '/current', params={'ip': args['ip'], 'key': self.wio_apikey})
-AttributeError: 'PublicGetCurrentWeather' object has no attribute 'wio_host'
-[2020-04-17 17:40:09,509]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather/ip?ip=115.178.239.169", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 17:44:48,696]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather/ip [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
-    return fn(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/weather/__init__.py", line 29, in get
-    lat = geo['latitude']
-KeyError: 'latitude'
-[2020-04-17 17:44:48,702]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather/ip?ip=115.178.239.169", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 17:48:18,984]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather/ip [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
-    return fn(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/weather/__init__.py", line 29, in get
-    lat = geo['lat']
-KeyError: 'lat'
-[2020-04-17 17:48:18,986]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather/ip?ip=115.178.239.169", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 17:48:37,610]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather/ip [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
-    return fn(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/weather/__init__.py", line 29, in get
-    lat = geo['latitude']
-KeyError: 'latitude'
-[2020-04-17 17:48:37,615]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather/ip?ip=115.178.239.169", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 17:51:49,983]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather/ip?ip=115.178.239.169", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"city": "Surabaya", "organization": "AS18004 PT WIRELESS INDONESIA ( WIN )", "timezone": "Asia/Jakarta", "current_weather": {"date": "2020-04-17:10", "temp": 29.2}}}
-[2020-04-17 17:55:46,542]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather/ip [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
-    return fn(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/weather/__init__.py", line 28, in get
-    lat = geo['latitude']
-KeyError: 'latitude'
-[2020-04-17 17:55:46,548]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather/ip?ip=115.178.239.169", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 17:56:26,581]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather/ip [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 108, in wrapper
-    return fn(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/weather/__init__.py", line 37, in get
-    'organization': geo['oraganization'],
-KeyError: 'oraganization'
-[2020-04-17 17:56:26,586]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather/ip?ip=115.178.239.169", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 17:57:28,355]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather/ip?ip=115.178.239.169", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"city": "Surabaya", "organization": "AS18004 PT WIRELESS INDONESIA ( WIN )", "timezone": "Asia/Jakarta", "current_weather": {"date": "2020-04-17:10", "temp": 29.2}}}
-[2020-04-17 19:20:22,314]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather/ip?ip=115.178.239.169", "request": {"client_key": "abc", "client_secret": "saj1233", "status": true}, "response": {"city": "Surabaya", "organization": "AS18004 PT WIRELESS INDONESIA ( WIN )", "timezone": "Asia/Jakarta", "current_weather": {"date": "2020-04-17:12", "temp": 28.3}}}
-[2020-04-17 21:55:50,625]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 50, in get
-    qry = Rent.query
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 517, in __get__
-    mapper = orm.class_mapper(type)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/base.py", line 451, in class_mapper
-    mapper = _inspect_mapped_class(class_, configure=configure)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/base.py", line 430, in _inspect_mapped_class
-    mapper._configure_all()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py", line 1337, in _configure_all
-    configure_mappers()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py", line 3255, in configure_mappers
-    mapper._post_configure_properties()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py", line 1950, in _post_configure_properties
-    prop.init()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/interfaces.py", line 196, in init
-    self.do_init()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 1983, in do_init
-    self._process_dependent_arguments()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 2045, in _process_dependent_arguments
-    self.target = self.entity.persist_selectable
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 883, in __get__
-    obj.__dict__[self.__name__] = result = self.fget(obj)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 1968, in entity
-    % (self.key, type(argument))
-sqlalchemy.exc.ArgumentError: relationship 'rent' expects a class or a mapper argument (received: <class 'sqlalchemy.sql.schema.Table'>)
-[2020-04-17 21:55:50,637]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 21:58:49,180]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 50, in get
-    qry = Rent.query
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 517, in __get__
-    mapper = orm.class_mapper(type)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/base.py", line 451, in class_mapper
-    mapper = _inspect_mapped_class(class_, configure=configure)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/base.py", line 430, in _inspect_mapped_class
-    mapper._configure_all()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py", line 1337, in _configure_all
-    configure_mappers()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py", line 3255, in configure_mappers
-    mapper._post_configure_properties()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py", line 1950, in _post_configure_properties
-    prop.init()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/interfaces.py", line 196, in init
-    self.do_init()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 1983, in do_init
-    self._process_dependent_arguments()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 2045, in _process_dependent_arguments
-    self.target = self.entity.persist_selectable
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 883, in __get__
-    obj.__dict__[self.__name__] = result = self.fget(obj)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 1968, in entity
-    % (self.key, type(argument))
-sqlalchemy.exc.ArgumentError: relationship 'rent' expects a class or a mapper argument (received: <class 'sqlalchemy.sql.schema.Table'>)
-[2020-04-17 21:58:49,184]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:07:49,732]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 2523, in _determine_joins
-    consider_as_foreign_keys=consider_as_foreign_keys,
-  File "<string>", line 2, in join_condition
-  File "<string>", line 2, in _join_condition
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/deprecations.py", line 128, in warned
-    return fn(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/sql/selectable.py", line 952, in _join_condition
-    % (a.description, b.description, hint)
-sqlalchemy.exc.NoForeignKeysError: Can't find any foreign key relationships between 'books' and 'rent'.
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 50, in get
-    qry = Rent.query
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 517, in __get__
-    mapper = orm.class_mapper(type)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/base.py", line 451, in class_mapper
-    mapper = _inspect_mapped_class(class_, configure=configure)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/base.py", line 430, in _inspect_mapped_class
-    mapper._configure_all()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py", line 1337, in _configure_all
-    configure_mappers()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py", line 3255, in configure_mappers
-    mapper._post_configure_properties()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py", line 1950, in _post_configure_properties
-    prop.init()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/interfaces.py", line 196, in init
-    self.do_init()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 1984, in do_init
-    self._setup_join_conditions()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 2064, in _setup_join_conditions
-    can_be_synced_fn=self._columns_are_mapped,
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 2408, in __init__
-    self._determine_joins()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 2551, in _determine_joins
-    from_=nfe,
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
-    raise exception
-sqlalchemy.exc.NoForeignKeysError: Could not determine join condition between parent/child tables on relationship Books.rent - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
-[2020-04-17 22:07:49,742]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:11:45,109]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 50, in get
-    qry = Rent.query
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 517, in __get__
-    mapper = orm.class_mapper(type)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/base.py", line 451, in class_mapper
-    mapper = _inspect_mapped_class(class_, configure=configure)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/base.py", line 430, in _inspect_mapped_class
-    mapper._configure_all()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py", line 1337, in _configure_all
-    configure_mappers()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py", line 3255, in configure_mappers
-    mapper._post_configure_properties()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/mapper.py", line 1950, in _post_configure_properties
-    prop.init()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/interfaces.py", line 196, in init
-    self.do_init()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 1983, in do_init
-    self._process_dependent_arguments()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 2045, in _process_dependent_arguments
-    self.target = self.entity.persist_selectable
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 883, in __get__
-    obj.__dict__[self.__name__] = result = self.fget(obj)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/relationships.py", line 1968, in entity
-    % (self.key, type(argument))
-sqlalchemy.exc.ArgumentError: relationship 'rent' expects a class or a mapper argument (received: <class 'sqlalchemy.sql.schema.Table'>)
-[2020-04-17 22:11:45,116]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:12:56,742]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 52, in get
-    if claims['status'] == False:
-NameError: name 'claims' is not defined
-[2020-04-17 22:12:56,745]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:13:33,515]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 53, in get
-    if claims['status'] == False:
-KeyError: 'status'
-[2020-04-17 22:13:33,517]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:16:49,520]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 53, in get
-    if claims['status'] == False:
-KeyError: 'status'
-[2020-04-17 22:16:49,523]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:18:10,591]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 53, in get
-    if claims['status'] == False:
-KeyError: 'status'
-[2020-04-17 22:18:10,594]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:18:45,130]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 53, in get
-    if claims['status'] == "False":
-KeyError: 'status'
-[2020-04-17 22:18:45,133]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:19:24,250]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/client?", "request": {}, "response": [{"id": 1, "client_key": "abcde123", "client_secret": "c6104da487ad9ea4c814c499bb4ba1afaef990fb07f7c7408f9226759466a58f523c570fea81d8b5d0a568d9addb3a3d2227cc21eb72e153e0be1b322326698c", "status": "True"}, {"id": 2, "client_key": "abcde1234", "client_secret": "22c00f0399adb6f87c998871b1f40b27b2079b348ec46c9731bac783a4c8ad6d5d42592bda406635a3e3508389f9cad051f1dd84b98c34f591deed5955e725a5", "status": "True"}, {"id": 3, "client_key": "abcde1235", "client_secret": "8faaecc88b4e04a1ee320a0c4adf5ed74c095dd4b0937abd6b296b8a03e8cd214e441768bc9ede7342a70e91f0600ad76b41e1a2b9e9908c2fe119c36981379b", "status": "True"}, {"id": 5, "client_key": "abcde2356", "client_secret": "a88fe381df52191fc3ab869aa6bb7370cb1d64f7657884decc15d2dad1755dd2edf9c30df0f01f268f05af8d31da830f50d4693a51971b5a60fefb364e78b206", "status": "True"}, {"id": 6, "client_key": "abc", "client_secret": "060cd3d9dc7faf0ba6dfb543b6102263021007c459579620ad3e1312a3790b3197758ca2fa98d42696179060118ca48bd1c09db288061511476444ee3ea561ef", "status": "True"}, {"id": 7, "client_key": "abc", "client_secret": "31e646d802907a3270311e973bdd12d28b0623ff897741544ecce95fa5e524156b2a8034ffce71b62ca87c41ebd652fad6d8eb512442f9b064a381d4301b61a2", "status": "True"}]}
-[2020-04-17 22:20:32,219]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 58, in get
-    if args['client_id'] is not None:
-KeyError: 'client_id'
-[2020-04-17 22:20:32,222]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:21:20,915]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": {}, "response": []}
-[2020-04-17 22:28:11,804]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/rent?", "request": {"book_id": 1, "user_id": 1}, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-17 22:29:14,925]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [POST]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 32, in post
-    parser.add_argument('book_id', location='json', help='invalid status')
-NameError: name 'parser' is not defined
-[2020-04-17 22:29:14,928]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {"book_id": 1, "user_id": 1}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:29:44,690]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [POST]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 36, in post
-    rent = Rent(args['book_id'], args['user_id'])
-TypeError: __init__() missing 1 required positional argument: 'return_date'
-[2020-04-17 22:29:44,693]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {"book_id": 1, "user_id": 1}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:30:57,031]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "POST", "code": "200 OK", "uri": "/rent?", "request": {"book_id": 1, "user_id": 1}, "response": {"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0}}
-[2020-04-17 22:32:01,067]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-TypeError: get() missing 1 required positional argument: 'id'
-[2020-04-17 22:32:01,069]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {"book_id": 1, "user_id": 1}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:33:13,581]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent/list [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 85, in get
-    rent = marshal(row, rent.response_fields)
-UnboundLocalError: local variable 'rent' referenced before assignment
-[2020-04-17 22:33:13,584]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent/list?", "request": {"book_id": 1, "user_id": 1}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:34:38,673]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent/list [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 87, in get
-    book = Book.query.get(rent['book_id'])
-NameError: name 'Book' is not defined
-[2020-04-17 22:34:38,676]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent/list?", "request": {"book_id": 1, "user_id": 1}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:34:55,818]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent/list?", "request": {"book_id": 1, "user_id": 1}, "response": [{"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0}]}
-[2020-04-17 22:35:16,432]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": {"book_id": 1, "user_id": 1}, "response": [{"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0}]}
-[2020-04-17 22:37:55,076]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "400 BAD REQUEST", "uri": "/client?p=integer&rp=integer&client_id=integer&status=integer", "request": null, "response": {"message": {"p": "invalid literal for int() with base 10: 'integer'"}}}
-[2020-04-17 22:38:43,513]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/client?", "request": null, "response": [{"id": 1, "client_key": "abcde123", "client_secret": "c6104da487ad9ea4c814c499bb4ba1afaef990fb07f7c7408f9226759466a58f523c570fea81d8b5d0a568d9addb3a3d2227cc21eb72e153e0be1b322326698c", "status": "True"}, {"id": 2, "client_key": "abcde1234", "client_secret": "22c00f0399adb6f87c998871b1f40b27b2079b348ec46c9731bac783a4c8ad6d5d42592bda406635a3e3508389f9cad051f1dd84b98c34f591deed5955e725a5", "status": "True"}, {"id": 3, "client_key": "abcde1235", "client_secret": "8faaecc88b4e04a1ee320a0c4adf5ed74c095dd4b0937abd6b296b8a03e8cd214e441768bc9ede7342a70e91f0600ad76b41e1a2b9e9908c2fe119c36981379b", "status": "True"}, {"id": 5, "client_key": "abcde2356", "client_secret": "a88fe381df52191fc3ab869aa6bb7370cb1d64f7657884decc15d2dad1755dd2edf9c30df0f01f268f05af8d31da830f50d4693a51971b5a60fefb364e78b206", "status": "True"}, {"id": 6, "client_key": "abc", "client_secret": "060cd3d9dc7faf0ba6dfb543b6102263021007c459579620ad3e1312a3790b3197758ca2fa98d42696179060118ca48bd1c09db288061511476444ee3ea561ef", "status": "True"}, {"id": 7, "client_key": "abc", "client_secret": "31e646d802907a3270311e973bdd12d28b0623ff897741544ecce95fa5e524156b2a8034ffce71b62ca87c41ebd652fad6d8eb512442f9b064a381d4301b61a2", "status": "True"}]}
-[2020-04-17 22:38:59,980]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/user?", "request": null, "response": [{"id": 1, "name": "Aisyah Putri", "age": 22, "sex": "female", "client_id": 1}, {"id": 2, "name": "M. Atiatul Muqtadir", "age": 22, "sex": "male", "client_id": 2}, {"id": 3, "name": "M. Rafli Ramadhan", "age": 17, "sex": "male", "client_id": 3}, {"id": 4, "name": "Marwanto", "age": 52, "sex": "male", "client_id": 4}, {"id": 5, "name": "Linda Agustine", "age": 46, "sex": "female", "client_id": 5}]}
-[2020-04-17 22:39:09,488]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/book?", "request": null, "response": [{"id": 1, "title": "My Book", "isbn": "123-456-789", "writer": "Aisyah"}, {"id": 3, "title": "Change", "isbn": "123-456-788", "writer": "Fatr"}]}
-[2020-04-17 22:39:27,408]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/rent/1?", "request": null, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-17 22:39:37,195]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": null, "response": [{"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0}]}
-[2020-04-17 22:39:44,330]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "400 BAD REQUEST", "uri": "/rent?p=integer&rp=integer&book_id=integer&user_id=integer", "request": null, "response": {"message": {"p": "invalid literal for int() with base 10: 'integer'"}}}
-[2020-04-17 22:41:35,715]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "400 BAD REQUEST", "uri": "/rent?p=integer&rp=integer&book_id=integer&user_id=integer", "request": null, "response": {"message": {"p": "invalid literal for int() with base 10: 'integer'"}}}
-[2020-04-17 22:41:40,969]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": null, "response": [{"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0}]}
-[2020-04-17 22:43:19,009]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 89, in get
-    rows.append(marshal(row, Rent.response_fields))
-AttributeError: 'collections.OrderedDict' object has no attribute 'append'
-[2020-04-17 22:43:19,012]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-17 22:46:24,952]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": null, "response": [{"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0}]}
-[2020-04-17 22:47:31,182]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": null, "response": {"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0, "book": {"id": 1, "title": "My Book", "isbn": "123-456-789", "writer": "Aisyah"}}}
-[2020-04-17 22:47:58,784]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": null, "response": {"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0, "book": {"id": 1, "title": "My Book", "isbn": "123-456-789", "writer": "Aisyah"}}}
-[2020-04-17 22:49:37,469]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": null, "response": [{"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0}]}
-[2020-04-17 22:51:00,759]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": null, "response": [{"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0, "book": {"id": 1, "title": "My Book", "isbn": "123-456-789", "writer": "Aisyah"}}]}
-[2020-04-17 22:52:35,563]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": null, "response": [{"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0, "user": {"id": 1, "name": "Aisyah Putri", "age": 22, "sex": "female", "client_id": 1}, "book": {"id": 1, "title": "My Book", "isbn": "123-456-789", "writer": "Aisyah"}}]}
-[2020-04-17 23:04:01,197]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "POST", "code": "200 OK", "uri": "/rent?", "request": {"book_id": 10, "user_id": 10}, "response": {"id": 2, "book_id": "10", "user_id": 10, "return_date": null, "client_id": 0}}
-[2020-04-17 23:04:14,926]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": {"book_id": 10, "user_id": 10}, "response": [{"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0, "user": {"id": 1, "name": "Aisyah Putri", "age": 22, "sex": "female", "client_id": 1}, "book": {"id": 1, "title": "My Book", "isbn": "123-456-789", "writer": "Aisyah"}}, {"id": 2, "book_id": "10", "user_id": 10, "return_date": null, "client_id": 0, "user": {"id": 0, "name": null, "age": 0, "sex": null, "client_id": 0}, "book": {"id": 0, "title": null, "isbn": null, "writer": null}}]}
-[2020-04-17 23:12:12,476]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "POST", "code": "400 BAD REQUEST", "uri": "/client?", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent"}, "response": {"message": {"status": "Missing required parameter in the JSON body"}}}
-[2020-04-17 23:12:23,174]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "POST", "code": "200 OK", "uri": "/client?", "request": {"client_key": "internal", "client_secret": "th1s1s1nt3n4lcl1ent", "status": true}, "response": {"id": 8, "client_key": "internal", "client_secret": "22a27635d7ce2b57168e81edf38893de4dc398b4805a1c82c25f43e503e0062d734e8c8871c05c52c97ff980e2e40df23c0c769098f7ec87ad9b8157baae9358", "status": "True"}}
-[2020-04-17 23:23:09,514]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": null, "response": [{"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0, "user": {"id": 1, "name": "Aisyah Putri", "age": 22, "sex": "female", "client_id": 1}, "book": {"id": 1, "title": "My Book", "isbn": "123-456-789", "writer": "Aisyah"}}, {"id": 2, "book_id": "10", "user_id": 10, "return_date": null, "client_id": 0, "user": {"id": 0, "name": null, "age": 0, "sex": null, "client_id": 0}, "book": {"id": 0, "title": null, "isbn": null, "writer": null}}]}
-[2020-04-17 23:23:17,172]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/base.py", line 406, in _entity_descriptor
-    return getattr(entity, key)
-AttributeError: type object 'Rent' has no attribute 'title'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 69, in get
-    qry = qry.filter_by(title=args['book_id'])
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 1852, in filter_by
-    for key, value in kwargs.items()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 1852, in <listcomp>
-    for key, value in kwargs.items()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/base.py", line 412, in _entity_descriptor
-    replace_context=err,
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
-    raise exception
-sqlalchemy.exc.InvalidRequestError: Entity '<class 'blueprints.rent.model.Rent'>' has no property 'title'
-[2020-04-17 23:23:17,177]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?book_id=integer&user_id=integer", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-17 23:23:22,889]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": null, "response": [{"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0, "user": {"id": 1, "name": "Aisyah Putri", "age": 22, "sex": "female", "client_id": 1}, "book": {"id": 1, "title": "My Book", "isbn": "123-456-789", "writer": "Aisyah"}}, {"id": 2, "book_id": "10", "user_id": 10, "return_date": null, "client_id": 0, "user": {"id": 0, "name": null, "age": 0, "sex": null, "client_id": 0}, "book": {"id": 0, "title": null, "isbn": null, "writer": null}}]}
-[2020-04-17 23:39:06,008]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/rent?", "request": {"book_id": 10, "user_id": 10}, "response": [{"id": 1, "book_id": "1", "user_id": 1, "return_date": null, "client_id": 0, "user": {"id": 1, "name": "Aisyah Putri", "age": 22, "sex": "female", "client_id": 1}, "book": {"id": 1, "title": "My Book", "isbn": "123-456-789", "writer": "Aisyah"}}, {"id": 2, "book_id": "10", "user_id": 10, "return_date": null, "client_id": 0, "user": {"id": 0, "name": null, "age": 0, "sex": null, "client_id": 0}, "book": {"id": 0, "title": null, "isbn": null, "writer": null}}]}
-[2020-04-17 23:39:21,041]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/rent?", "request": {"book_id": 10, "user_id": 10}, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-17 23:39:44,121]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [POST]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1975, in add
-    state = attributes.instance_state(instance)
-AttributeError: 'collections.OrderedDict' object has no attribute '_sa_instance_state'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 44, in post
-    db.session.add(rent)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
-    return getattr(self.registry(), name)(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1978, in add
-    exc.UnmappedInstanceError(instance), replace_context=err,
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
-    raise exception
-sqlalchemy.orm.exc.UnmappedInstanceError: Class 'collections.OrderedDict' is not mapped
-[2020-04-17 23:39:44,126]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {"book_id": 10, "user_id": 10}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 23:41:11,296]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /rent [POST]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
-    cursor, statement, parameters, context
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
-    cursor.execute(statement, parameters)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
-    result = self._query(query)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
-    conn.query(q)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
-    result.read()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
-    first_packet = self.connection._read_packet()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
-    packet.check_error()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.IntegrityError: (1062, "Duplicate entry '10' for key 'book_id'")
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
-    resp = meth(*args, **kwargs)
-  File "/home/alta4/Tugas 3 & 4/blueprints/rent/resources.py", line 40, in post
-    db.session.commit()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
-    return getattr(self.registry(), name)(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1036, in commit
-    self.transaction.commit()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 503, in commit
-    self._prepare_impl()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 482, in _prepare_impl
-    self.session.flush()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2496, in flush
-    self._flush(objects)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2637, in _flush
-    transaction.rollback(_capture_exception=True)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
-    exc_value, with_traceback=exc_tb,
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
-    raise exception
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2597, in _flush
-    flush_context.execute()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
-    rec.execute(self)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
-    uow,
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
-    insert,
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1136, in _emit_insert_statements
-    statement, params
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
-    return meth(self, multiparams, params)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
-    return connection._execute_clauseelement(self, multiparams, params)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
-    distilled_params,
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1288, in _execute_context
-    e, statement, parameters, cursor, context
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
-    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
-    raise exception
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
-    cursor, statement, parameters, context
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
-    cursor.execute(statement, parameters)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
-    result = self._query(query)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
-    conn.query(q)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
-    result.read()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
-    first_packet = self.connection._read_packet()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
-    packet.check_error()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
-    err.raise_mysql_exception(self._data)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
-    raise errorclass(errno, errval)
-sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry '10' for key 'book_id'")
-[SQL: INSERT INTO rent (book_id, user_id, return_date, updated_at) VALUES (%(book_id)s, %(user_id)s, %(return_date)s, %(updated_at)s)]
-[parameters: {'book_id': '10', 'user_id': '10', 'return_date': None, 'updated_at': None}]
-(Background on this error at: http://sqlalche.me/e/gkpj)
-[2020-04-17 23:41:11,305]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/rent?", "request": {"book_id": 10, "user_id": 10}, "response": {"message": "Internal Server Error"}}
-[2020-04-17 23:42:11,562]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "POST", "code": "200 OK", "uri": "/rent?", "request": {"book_id": 11, "user_id": 11}, "response": {"id": 4, "book_id": "11", "user_id": 11, "return_date": null, "client_id": 0, "user": {"id": 0, "name": null, "age": 0, "sex": null, "client_id": 0}, "book": {"id": 0, "title": null, "isbn": null, "writer": null}}}
-[2020-04-17 23:59:53,578]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/token?client_id=string&client_secret=string", "request": null, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-18 00:00:47,738]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/token?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": null, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-18 00:01:43,304]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/token?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": null, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2020-04-18 00:01:49,704]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/token?client_key=internal&client_secret=th1s1s1nt3n4lcl1ent", "request": null, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODcxNDI5MDksIm5iZiI6MTU4NzE0MjkwOSwianRpIjoiNDIyMTE5NjUtNDkyNS00NTAwLWI2YzEtODRjNDNkY2ZmZmVlIiwiZXhwIjoxNTg3MjI5MzA5LCJpZGVudGl0eSI6ImludGVybmFsIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjgsImNsaWVudF9rZXkiOiJpbnRlcm5hbCIsInN0YXR1cyI6IlRydWUiLCJpZGVudGlmaWVyIjoiYWx0YWJhdGNoNSJ9fQ.wxc841LPxwsxOYk8Y_56CNY1wP8c8LG6P0b3RN3uAvs"}}
-[2020-04-18 00:02:21,567]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /book [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
-    assert meth is not None, 'Unimplemented method %r' % request.method
-AssertionError: Unimplemented method 'GET'
-[2020-04-18 00:02:21,571]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/book?", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-18 00:02:30,886]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /book [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
-    assert meth is not None, 'Unimplemented method %r' % request.method
-AssertionError: Unimplemented method 'GET'
-[2020-04-18 00:02:30,887]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/book?", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-18 00:03:30,192]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/book?", "request": null, "response": [{"id": 1, "title": "My Book", "isbn": "123-456-789", "writer": "Aisyah"}, {"id": 3, "title": "Change", "isbn": "123-456-788", "writer": "Fatr"}]}
-[2020-04-18 00:07:00,026]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:68} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/book?", "request": null, "response": null}
-[2020-04-18 00:08:31,330]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /book [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
-    assert meth is not None, 'Unimplemented method %r' % request.method
-AssertionError: Unimplemented method 'GET'
-[2020-04-18 00:08:31,333]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/book?", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-18 00:09:40,911]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /book/1 [GET]
-Traceback (most recent call last):
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
-    resp = resource(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
-    return self.dispatch_request(*args, **kwargs)
-  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
-    assert meth is not None, 'Unimplemented method %r' % request.method
-AssertionError: Unimplemented method 'GET'
-[2020-04-18 00:09:40,912]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/book/1?", "request": null, "response": {"message": "Internal Server Error"}}
-[2020-04-18 00:11:59,701]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:77} ERROR - REQUEST_LOG	{"method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/token?", "request": null, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-18 00:13:14,505]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/token?", "request": null, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-18 00:13:54,504]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/token?", "request": null, "response": {"message": "The method is not allowed for the requested URL."}}
-[2020-04-18 00:14:16,935]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /token/refresh [POST]
+[2020-04-18 00:14:16,937]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/token/refresh?", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-18 00:14:26,945]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /token/refresh [POST]
 Traceback (most recent call last):
   File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -847,3 +12,934 @@ Traceback (most recent call last):
   File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
     assert meth is not None, 'Unimplemented method %r' % request.method
 AssertionError: Unimplemented method 'POST'
+[2020-04-18 00:14:26,947]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/token/refresh?", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-18 00:18:04,045]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /token/refresh [POST]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    assert meth is not None, 'Unimplemented method %r' % request.method
+AssertionError: Unimplemented method 'POST'
+[2020-04-18 00:18:04,048]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/token/refresh?", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-18 00:23:14,714]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /book [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    assert meth is not None, 'Unimplemented method %r' % request.method
+AssertionError: Unimplemented method 'GET'
+[2020-04-18 00:23:14,717]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/book?", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-18 00:40:30,411]{/home/alta4/Tugas 3 & 4/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/book?", "request": null, "response": [{"id": 1, "title": "My Book", "isbn": "123-456-789", "writer": "Aisyah"}, {"id": 3, "title": "Change", "isbn": "123-456-788", "writer": "Fatr"}]}
+[2020-04-19 06:12:16,466]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "uri": "/weather?id=1636722", "request": null, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
+[2020-04-19 06:14:12,508]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": [{"weath": "Clouds", "desc": "overcast clouds", "time": "2020-04-19 00:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-19 03:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-19 06:00:00"}, {"weath": "Rain", "desc": "moderate rain", "time": "2020-04-19 09:00:00"}, {"weath": "Rain", "desc": "moderate rain", "time": "2020-04-19 12:00:00"}, {"weath": "Rain", "desc": "moderate rain", "time": "2020-04-19 15:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-19 18:00:00"}, {"weath": "Clouds", "desc": "overcast clouds", "time": "2020-04-19 21:00:00"}, {"weath": "Clouds", "desc": "overcast clouds", "time": "2020-04-20 00:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-20 03:00:00"}, {"weath": "Rain", "desc": "moderate rain", "time": "2020-04-20 06:00:00"}, {"weath": "Rain", "desc": "moderate rain", "time": "2020-04-20 09:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-20 12:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-20 15:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-20 18:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-20 21:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-21 00:00:00"}, {"weath": "Clouds", "desc": "few clouds", "time": "2020-04-21 03:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-21 06:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-21 09:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-21 12:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-21 15:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-21 18:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-21 21:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-22 00:00:00"}, {"weath": "Clear", "desc": "clear sky", "time": "2020-04-22 03:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-22 06:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-22 09:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-22 12:00:00"}, {"weath": "Clouds", "desc": "scattered clouds", "time": "2020-04-22 15:00:00"}, {"weath": "Clouds", "desc": "scattered clouds", "time": "2020-04-22 18:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-22 21:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-23 00:00:00"}, {"weath": "Clouds", "desc": "scattered clouds", "time": "2020-04-23 03:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-23 06:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-23 09:00:00"}, {"weath": "Rain", "desc": "light rain", "time": "2020-04-23 12:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-23 15:00:00"}, {"weath": "Clouds", "desc": "broken clouds", "time": "2020-04-23 18:00:00"}, {"weath": "Clouds", "desc": "overcast clouds", "time": "2020-04-23 21:00:00"}]}
+[2020-04-19 06:53:04,441]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 31, in get
+    if period['dt_txt'].split[0 == str(today)] and hasil['main weather'] == 'Rain':
+TypeError: 'builtin_function_or_method' object is not subscriptable
+[2020-04-19 06:53:04,445]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 06:54:55,787]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 31, in get
+    if period['dt_txt'].split[0] == str(today) and period['weather']['main'] == 'Rain':
+TypeError: 'builtin_function_or_method' object is not subscriptable
+[2020-04-19 06:54:55,791]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 06:56:14,749]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 24, in get
+    today = date.today()
+UnboundLocalError: local variable 'date' referenced before assignment
+[2020-04-19 06:56:14,753]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 06:56:47,241]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 24, in get
+    today = date.today()
+UnboundLocalError: local variable 'date' referenced before assignment
+[2020-04-19 06:56:47,244]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 06:57:38,753]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 32, in get
+    if tgl[0] == str(today) and period['weather']['main'] == 'Rain':
+TypeError: list indices must be integers or slices, not str
+[2020-04-19 06:57:38,759]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 06:58:04,816]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 32, in get
+    if str(tgl[0]) == str(today) and period['weather']['main'] == 'Rain':
+TypeError: list indices must be integers or slices, not str
+[2020-04-19 06:58:04,821]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 06:58:33,107]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 32, in get
+    if tgl[0] == str(today) and str(period['weather']['main']) == 'Rain':
+TypeError: list indices must be integers or slices, not str
+[2020-04-19 06:58:33,112]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 07:00:00,288]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": [{"weather today": "Sometimes rain"}, {"weather today": "Sometimes rain"}, {"weather today": "Sometimes rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}]}
+[2020-04-19 07:00:41,700]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": [{"weather today": "Sun bright all day"}, {"weather today": "Sometimes rain"}, {"weather today": "Sometimes rain"}, {"weather today": "Sometimes rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}, {"weather today": "Mostly rain"}]}
+[2020-04-19 07:01:22,221]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": [{"weather today": "Mostly rain"}]}
+[2020-04-19 07:07:08,970]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 44, in get
+    hasil['city id'] = forecast['list']['city']['id']
+TypeError: list indices must be integers or slices, not str
+[2020-04-19 07:07:08,975]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 07:08:58,208]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": [{"weather today": "Mostly rain", "city id": 1636722, "city": "Malang"}]}
+[2020-04-19 07:09:51,293]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": {"weather today": "Mostly rain", "city id": 1636722, "city": "Malang"}}
+[2020-04-19 07:10:44,567]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 472, in wrapper
+    return self.make_response(data, code, headers=headers)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 501, in make_response
+    resp = self.representations[mediatype](data, *args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/representations/json.py", line 21, in output_json
+    dumped = dumps(data, **settings) + "\n"
+  File "/usr/lib/python3.6/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'date' is not JSON serializable
+[2020-04-19 07:10:44,572]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?id=1636722", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 07:11:26,106]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": {"weather today": "Mostly rain", "city id": 1636722, "city": "Malang", "date": "2020-04-19"}}
+[2020-04-19 07:15:12,424]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": {"weather today": "Mostly rain", "city id": 1636722, "city": "Malang", "date": "2020-04-19"}}
+[2020-04-19 07:16:47,235]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?id=1636722", "request": null, "response": {"weather today": "Mostly rain", "city id": 1636722, "city": "Malang", "date": "2020-04-19"}}
+[2020-04-19 08:08:31,690]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Mostly rain, you should bring your umbrella!", "city id": 1636722, "city": "Malang", "date": "2020-04-19"}}
+[2020-04-19 09:12:19,866]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /weather [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/weather/__init__.py", line 29, in get
+    for period in forecast['list']:
+KeyError: 'list'
+[2020-04-19 09:12:19,868]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/weather?category=love&language=en", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 09:12:26,671]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/qod/__init__.py", line 24, in get
+    qod['quote'] = qod_req['quotes']['quote']
+KeyError: 'quotes'
+[2020-04-19 09:12:26,674]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?category=love&language=en", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 09:14:30,087]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/qod/__init__.py", line 24, in get
+    qod['quote'] = qod_req['contents']['quotes']['quote']
+TypeError: list indices must be integers or slices, not str
+[2020-04-19 09:14:30,091]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?category=love&language=en", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 09:18:52,266]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/qod/__init__.py", line 24, in get
+    qod['quote'] = qod_req['contents']['quotes']['quote']
+TypeError: list indices must be integers or slices, not str
+[2020-04-19 09:18:52,268]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?category=life&language=en", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 09:19:32,728]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?category=life&language=en", "request": null, "response": {"success": {"total": 1}, "contents": {"quotes": [{"quote": "Life is a game, play it.", "length": "24", "author": "Mother Theresa", "tags": ["game", "life"], "category": "life", "language": "en", "date": "2020-04-19", "permalink": "https://theysaidso.com/quote/mother-theresa-life-is-a-game-play-it", "id": "MAzWc3xqHX6gBtf8s_MYPQeF", "background": "https://theysaidso.com/img/qod/qod-life.jpg", "title": "Quote of the day about life"}]}, "baseurl": "https://theysaidso.com", "copyright": {"year": 2022, "url": "https://theysaidso.com"}}}
+[2020-04-19 09:23:16,316]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /qod [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/Documents/Project/blueprints/qod/__init__.py", line 25, in get
+    qod['quote'] = qod_req['contents']['quotes']['quote']
+TypeError: list indices must be integers or slices, not str
+[2020-04-19 09:23:16,319]{/home/alta11/Documents/Project/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?category=life&language=en", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 09:24:40,155]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?category=life&language=en", "request": null, "response": {"success": {"total": 1}, "contents": {"quotes": [{"quote": "Life is a game, play it.", "length": "24", "author": "Mother Theresa", "tags": ["game", "life"], "category": "life", "language": "en", "date": "2020-04-19", "permalink": "https://theysaidso.com/quote/mother-theresa-life-is-a-game-play-it", "id": "MAzWc3xqHX6gBtf8s_MYPQeF", "background": "https://theysaidso.com/img/qod/qod-life.jpg", "title": "Quote of the day about life"}]}, "baseurl": "https://theysaidso.com", "copyright": {"year": 2022, "url": "https://theysaidso.com"}}}
+[2020-04-19 09:26:31,679]{/home/alta11/Documents/Project/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?category=life&language=en", "request": null, "response": {"quote": "Life is a game, play it.", "author": "Mother Theresa"}}
+[2020-04-19 11:09:05,784]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 28, in get
+    output['judul'] = track_req['tracks']['items'][0]['album']['name']
+KeyError: 'tracks'
+[2020-04-19 11:09:05,788]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 11:10:45,041]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 28, in get
+    output['judul'] = track_req['tracks']['items'][0]['album']['name']
+KeyError: 'tracks'
+[2020-04-19 11:10:45,045]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 11:12:12,334]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?", "request": {}, "response": {"error": {"status": 401, "message": "No token provided"}}}
+[2020-04-19 11:13:28,368]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?", "request": {}, "response": {"error": {"status": 401, "message": "No token provided"}}}
+[2020-04-19 11:53:16,854]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?", "request": null, "response": {"error": {"status": 401, "message": "No token provided"}}}
+[2020-04-19 12:12:57,372]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?keywords=Ardhito&type=track", "request": null, "response": {"error": {"status": 401, "message": "No token provided"}}}
+[2020-04-19 12:40:16,346]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 29, in get
+    rq = requests.get(self.track_host, params={'q': args['q'], 'type': args['type']})
+AttributeError: 'TracksOfTheDay' object has no attribute 'track_host'
+[2020-04-19 12:40:16,350]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 12:41:03,839]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 36, in get
+    output['judul'] = track_req['tracks']['items'][0]['album']['name']
+KeyError: 'tracks'
+[2020-04-19 12:41:03,843]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 12:42:26,911]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 36, in get
+    output['judul'] = item['tracks']['items'][0]['album']['name']
+TypeError: string indices must be integers
+[2020-04-19 12:42:26,913]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 12:43:48,998]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 36, in get
+    output['judul'] = track_req['tracks']['items'][0]['album']['name']
+KeyError: 'tracks'
+[2020-04-19 12:43:49,004]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 12:44:09,563]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 36, in get
+    output['judul'] = track_req['tracks']['items'][0]['album']['name']
+KeyError: 'tracks'
+[2020-04-19 12:44:09,566]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?", "request": {}, "response": {"message": "Internal Server Error"}}
+[2020-04-19 12:44:34,616]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?", "request": {}, "response": {"error": {"status": 401, "message": "No token provided"}}}
+[2020-04-19 13:10:25,205]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 29, in get
+    rq = requests.get(self.track_host, params={'q': args['q'], 'type': args['type'], 'limit': args['limit']}, headers=self.headers, data=self.payload)
+KeyError: 'limit'
+[2020-04-19 13:10:25,207]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 13:11:15,481]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
+[2020-04-19 13:33:32,708]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": [{"judul": "bitterlove"}, {"judul": "bitterlove"}, {"judul": "bitterlove"}, {"judul": "bitterlove"}, {"judul": "bitterlove"}]}
+[2020-04-19 13:56:28,464]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
+[2020-04-19 13:59:53,576]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "POST", "code": "405 METHOD NOT ALLOWED", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "The method is not allowed for the requested URL."}}
+[2020-04-19 14:00:17,047]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 33, in get
+    singer = track_req['tracks']['items'][0]['artists']['name']
+TypeError: list indices must be integers or slices, not str
+[2020-04-19 14:00:17,050]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 14:16:10,334]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
+[2020-04-19 14:19:11,681]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 33, in get
+    penyanyi = track_req['tracks']['items'][0]['artists']['name']
+TypeError: list indices must be integers or slices, not str
+[2020-04-19 14:19:11,685]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 14:19:37,309]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
+[2020-04-19 14:22:34,639]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove"}}
+[2020-04-19 14:22:57,502]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove", "penyanyi": "Ardhito Pramono"}}
+[2020-04-19 14:24:55,322]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 34, in get
+    link = track_req['tracks']['items'][0]['album']['external_url']['spotify']
+KeyError: 'external_url'
+[2020-04-19 14:24:55,325]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 14:25:41,888]{/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta4/VirtualEnv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta4/APP-Alay/blueprints/track/__init__.py", line 34, in get
+    link = track_req['tracks']['items'][0]['external_url']['spotify']
+KeyError: 'external_url'
+[2020-04-19 14:25:41,891]{/home/alta4/APP-Alay/blueprints/__init__.py:79} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-19 14:26:19,174]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove", "penyanyi": "Ardhito Pramono", "link": "https://open.spotify.com/track/74OLXYsvpfmSgPCMMi898K"}}
+[2020-04-19 14:27:17,552]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"judul": "bitterlove", "penyanyi": "Ardhito Pramono", "link": "https://open.spotify.com/track/74OLXYsvpfmSgPCMMi898K"}}
+[2020-04-19 14:27:38,125]{/home/alta4/APP-Alay/blueprints/__init__.py:70} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/track?q=Ardhito&type=track&limit=5", "request": null, "response": {"title": "bitterlove", "singer": "Ardhito Pramono", "link": "https://open.spotify.com/track/74OLXYsvpfmSgPCMMi898K"}}
+[2020-04-19 18:40:11,631]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?category=life&language=en", "request": null, "response": {"quote": "Life is a game, play it.", "author": "Mother Theresa"}}
+[2020-04-19 18:40:29,756]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?category=life&language=en", "request": null, "response": {"quote": "Life is a game, play it.", "author": "Mother Theresa"}}
+[2020-04-19 18:40:34,952]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Mostly rain, you should bring your umbrella!", "city id": 1636722, "city": "Malang", "date": "2020-04-19"}}
+[2020-04-21 17:55:23,597]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "POST", "code": "404 NOT FOUND", "uri": "/client?", "request": {"client_key": "Alul", "client_secret": "password", "status": true}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
+[2020-04-21 17:56:39,788]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "POST", "code": "200 OK", "uri": "/client?", "request": {"client_key": "Alul", "client_secret": "password", "status": true}, "response": {"id": 1, "client_key": "Alul", "client_secret": "e46d7e312a4a6f7935338d8e08df15ba1d757c71716c9c7d7c7b2e5f3e7796b04aa3086c348c7af40944edb0c7294c1e6b2be9754ed301dc16755334d9c2f58f", "status": "True"}}
+[2020-04-21 17:57:07,439]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/client?", "request": null, "response": [{"id": 1, "client_key": "Alul", "client_secret": "e46d7e312a4a6f7935338d8e08df15ba1d757c71716c9c7d7c7b2e5f3e7796b04aa3086c348c7af40944edb0c7294c1e6b2be9754ed301dc16755334d9c2f58f", "status": "True"}]}
+[2020-04-21 17:57:44,124]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/token?client_key=Alul&client_secret=password", "request": null, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODc0NjY2NjQsIm5iZiI6MTU4NzQ2NjY2NCwianRpIjoiOTk5MzdiMzMtNTdhMy00MWFmLWJiNjctNDJjNmE5ZDI2MzQ2IiwiZXhwIjoxNTg3NTUzMDY0LCJpZGVudGl0eSI6IkFsdWwiLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MSwiY2xpZW50X2tleSI6IkFsdWwiLCJzdGF0dXMiOiJUcnVlIiwiaWRlbnRpZmllciI6ImFsdGFiYXRjaDUifX0.xXUem-ea6jNIHLFM5vTGS5ag-C9QKSGqUGhIy1SePp4"}}
+[2020-04-21 17:58:47,529]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "POST", "code": "200 OK", "uri": "/token/refresh?", "request": null, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODc0NjY3MjcsIm5iZiI6MTU4NzQ2NjcyNywianRpIjoiZDVkNDRiODItNGQ4OS00ZDllLWI3YWUtNjc4ZDViYmE0NjFmIiwiZXhwIjoxNTg3NTUzMTI3LCJpZGVudGl0eSI6InBlbmVyYml0IiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjEsImNsaWVudF9rZXkiOiJwZW5lcmJpdCIsInN0YXR1cyI6IlRydWUifX0.JrI5rkiG4oUr0kV4N7S1hrQwHvjklMslJ1ikJGJnVPw"}}
+[2020-04-21 18:25:55,704]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /client/1 [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 39, in wrapper
+    verify_jwt_in_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 32, in verify_jwt_in_request
+    jwt_data, jwt_header = _decode_jwt_from_request(request_type='access')
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_jwt_extended/view_decorators.py", line 314, in _decode_jwt_from_request
+    raise NoAuthorizationError(errors[0])
+flask_jwt_extended.exceptions.NoAuthorizationError: Missing Authorization Header
+[2020-04-21 18:25:55,709]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/client/1?", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:26:05,698]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/client/1?", "request": null, "response": {"id": 1, "client_key": "Alul", "client_secret": "e46d7e312a4a6f7935338d8e08df15ba1d757c71716c9c7d7c7b2e5f3e7796b04aa3086c348c7af40944edb0c7294c1e6b2be9754ed301dc16755334d9c2f58f", "status": "True"}}
+[2020-04-21 18:26:45,217]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "PUT", "code": "400 BAD REQUEST", "uri": "/client/1?", "request": {"client_key": "Aisyah"}, "response": {"message": {"client_secret": "Missing required parameter in the JSON body"}}}
+[2020-04-21 18:26:53,096]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /client/1 [PUT]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'status' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 45, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/client/resources.py", line 61, in put
+    db.session.commit()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1036, in commit
+    self.transaction.commit()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 503, in commit
+    self._prepare_impl()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 482, in _prepare_impl
+    self.session.flush()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2496, in flush
+    self._flush(objects)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2637, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    exc_value, with_traceback=exc_tb,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2597, in _flush
+    flush_context.execute()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 236, in save_obj
+    update,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 995, in _emit_update_statements
+    statement, multiparams
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1288, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1048, "Column 'status' cannot be null")
+[SQL: UPDATE clients SET client_key=%(client_key)s, client_secret=%(client_secret)s, status=%(status)s, updated_at=now() WHERE clients.id = %(clients_id)s]
+[parameters: {'client_key': 'Aisyah', 'client_secret': None, 'status': None, 'clients_id': 1}]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2020-04-21 18:26:53,107]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "PUT", "code": "500 INTERNAL SERVER ERROR", "uri": "/client/1?", "request": {"client_key": "Aisyah"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:27:12,068]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/client?", "request": null, "response": [{"id": 1, "client_key": "Alul", "client_secret": "e46d7e312a4a6f7935338d8e08df15ba1d757c71716c9c7d7c7b2e5f3e7796b04aa3086c348c7af40944edb0c7294c1e6b2be9754ed301dc16755334d9c2f58f", "status": "True"}]}
+[2020-04-21 18:27:29,252]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /client/1 [PUT]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'status' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 45, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/client/resources.py", line 61, in put
+    db.session.commit()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1036, in commit
+    self.transaction.commit()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 503, in commit
+    self._prepare_impl()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 482, in _prepare_impl
+    self.session.flush()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2496, in flush
+    self._flush(objects)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2637, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    exc_value, with_traceback=exc_tb,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2597, in _flush
+    flush_context.execute()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 236, in save_obj
+    update,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 995, in _emit_update_statements
+    statement, multiparams
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1288, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1048, "Column 'status' cannot be null")
+[SQL: UPDATE clients SET client_key=%(client_key)s, client_secret=%(client_secret)s, status=%(status)s, updated_at=now() WHERE clients.id = %(clients_id)s]
+[parameters: {'client_key': 'Aisyah', 'client_secret': None, 'status': None, 'clients_id': 1}]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2020-04-21 18:27:29,255]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "PUT", "code": "500 INTERNAL SERVER ERROR", "uri": "/client/1?", "request": {"client_key": "Aisyah"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:27:52,020]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /client/1 [PUT]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'status' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 45, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/client/resources.py", line 61, in put
+    db.session.commit()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1036, in commit
+    self.transaction.commit()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 503, in commit
+    self._prepare_impl()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 482, in _prepare_impl
+    self.session.flush()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2496, in flush
+    self._flush(objects)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2637, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    exc_value, with_traceback=exc_tb,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2597, in _flush
+    flush_context.execute()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 236, in save_obj
+    update,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 995, in _emit_update_statements
+    statement, multiparams
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1288, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1048, "Column 'status' cannot be null")
+[SQL: UPDATE clients SET client_secret=%(client_secret)s, status=%(status)s, updated_at=now() WHERE clients.id = %(clients_id)s]
+[parameters: {'client_secret': None, 'status': None, 'clients_id': 1}]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2020-04-21 18:27:52,024]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "PUT", "code": "500 INTERNAL SERVER ERROR", "uri": "/client/1?", "request": {"client_key": "Alul"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:28:00,059]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/token?client_key=Alul&client_secret=password", "request": null, "response": {"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODc0Njg0ODAsIm5iZiI6MTU4NzQ2ODQ4MCwianRpIjoiOTFiYzQyODItMjc1YS00ZDY5LTk2YjctNGJkZjY0YjA0MTkyIiwiZXhwIjoxNTg3NTU0ODgwLCJpZGVudGl0eSI6IkFsdWwiLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MSwiY2xpZW50X2tleSI6IkFsdWwiLCJzdGF0dXMiOiJUcnVlIiwiaWRlbnRpZmllciI6ImFsdGFiYXRjaDUifX0.6Ie0mR5zYDcdN9pbYxepFdvbLxN2bxOd22PuPA0Kv64"}}
+[2020-04-21 18:28:08,571]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /client/1 [PUT]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'status' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/__init__.py", line 45, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/client/resources.py", line 61, in put
+    db.session.commit()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1036, in commit
+    self.transaction.commit()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 503, in commit
+    self._prepare_impl()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 482, in _prepare_impl
+    self.session.flush()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2496, in flush
+    self._flush(objects)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2637, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    exc_value, with_traceback=exc_tb,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2597, in _flush
+    flush_context.execute()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 236, in save_obj
+    update,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 995, in _emit_update_statements
+    statement, multiparams
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1288, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1048, "Column 'status' cannot be null")
+[SQL: UPDATE clients SET client_secret=%(client_secret)s, status=%(status)s, updated_at=now() WHERE clients.id = %(clients_id)s]
+[parameters: {'client_secret': None, 'status': None, 'clients_id': 1}]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2020-04-21 18:28:08,573]{/home/alta11/APP-Alay/blueprints/__init__.py:75} ERROR - REQUEST_LOG	{"method": "PUT", "code": "500 INTERNAL SERVER ERROR", "uri": "/client/1?", "request": {"client_key": "Alul"}, "response": {"message": "Internal Server Error"}}
+[2020-04-21 18:28:39,227]{/home/alta11/APP-Alay/blueprints/__init__.py:66} WARNING - REQUEST_LOG	{"method": "POST", "code": "200 OK", "uri": "/client?", "request": {"client_key": "Asiyah", "client_secret": "password", "status": false}, "response": {"id": 2, "client_key": "Asiyah", "client_secret": "d77d80170f52b833de945703185df3c17f4c246bd06c77e17bc2113c8319e00a9235c7b2bdb0d2a48b23d249a3a361f36c03f07c91ff39f1cb4fcac1634690e2", "status": "False"}}
