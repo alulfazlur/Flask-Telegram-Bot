@@ -12,9 +12,7 @@ from sqlalchemy.orm import backref
 class Qod(db.Model):
     __tablename__ = "qod"
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    weather_id = db.Column(db.Integer, db.ForeignKey('weather.id'))
-    category = db.Column(db.String(20), nullable=False)
-    track = db.relationship('Tracks', backref='qod', lazy=True, uselist=False)
+    category = db.Column(db.String(100), nullable=False)
 
     response_fields = {
         'id': fields.Integer,

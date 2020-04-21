@@ -77,4 +77,8 @@ def forecastWeather(message):
 bot.polling()
 
 while True: # Don't let the main Thread end.
-    pass
+    try:
+        bot.polling(none_stop=True)
+    except Exception as err:
+        logging.error(err)
+        time.sleep(60)
