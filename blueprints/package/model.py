@@ -31,7 +31,7 @@ class Package(db.Model):
         'song_category': fields.String
     }
 
-    def __init__(self, weather_category,qod_category,song_category ):
+    def __init__(self, weather_category,qod_category,song_category):
         self.weather_category = weather_category
         self.qod_category = qod_category
         self.song_category = song_category

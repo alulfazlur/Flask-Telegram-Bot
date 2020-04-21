@@ -11,8 +11,11 @@ from flask_script import Manager
 
 
 app = Flask(__name__)
-if os.environ.get('FLASK_ENV', 'Production') == "Production":
+flask_env = os.environ.get('FLASK_ENV', 'Production')
+if  flask_env == "Production":
     app.config.from_object(config.ProductionConfig)
+elif flask_env == "Testing":
+    app.config.from_object(config.TestingConfig)
 else:
     app.config.from_object(config.DevelopmentConfig)
 
@@ -86,22 +89,26 @@ def after_request(response):
     #         'response': json.loads(response.data.decode('utf-8'))}))
     return response
 
-from blueprints.package.resources import bp_package
-app.register_blueprint(bp_package, url_prefix='/pack')
-
-from blueprints.client.resources import bp_client
-app.register_blueprint(bp_client, url_prefix='/client')
+# from blueprints.book.resources import bp_book
+# app.register_blueprint(bp_book, url_prefix='/book')
 
 from blueprints.auth import bp_auth
 app.register_blueprint(bp_auth, url_prefix='/token')
 
-from blueprints.weather import bp_weather
-app.register_blueprint(bp_weather, url_prefix='/weather')
+from blueprints.client.resources import bp_client
+app.register_blueprint(bp_client, url_prefix='/client')
+
+# from blueprints.package.resources import bp_package
+# app.register_blueprint(bp_package, url_prefix='/package')
 
 from blueprints.qod import bp_qod
 app.register_blueprint(bp_qod, url_prefix='/qod')
 
 from blueprints.track import bp_track
 app.register_blueprint(bp_track, url_prefix='/track')
+
+from blueprints.weather import bp_weather
+app.register_blueprint(bp_weather, url_prefix='/weather')
+
 
 db.create_all()
