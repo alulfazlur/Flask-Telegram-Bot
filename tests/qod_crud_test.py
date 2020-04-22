@@ -1,60 +1,108 @@
 import json
-from . import app, client, create_token_internal
-from unittest import mock
-from unittest.mock import patch
+from . import app, client, cache, create_token_internal, create_token_noninternal, init_database
 
-class Testqod():
-    def mocked_qod_get(*args, **kwargs):
-        class MockResponse:
-            def __init__(self, json_data, status_code):
-                self.json_data = json_data
-                self.status_code = status_code
+class TestQodCrud():
+    
+    def test_qod_list_internal(self, client, init_database):
+        token = create_token_internal()
+        # data = {
+        #     "p":1,
+        #     "rp":5
+        # }
+        res = client.get('/qod/list',
+                        # query_string=data,
+                        headers={'Authorization':'Bearer ' + token},
+                        content_type='application/json')
 
-            def json(self):
-                return self.json_data
-
-        if len(args) > 0:
-            if args[0] == "https://quotes.rest":
-                return MockResponse({
-                                "contents": {
-                                "quotes": [
-                                {
-                                    "quote": "inspire is only a dirty trick played on us to achieve continuation of the species.",
-                                    "length": "79",
-                                    "author": "W. Somerset Maugham",
-                                    "tags": [
-                                    "inspire"
-                                    ],
-                                    "category": "inspire",
-                                    "language": "en",
-                                    "date": "2020-04-21",
-                                    "permalink": "https://theysaidso.com/quote/w-somerset-maugham-inspire-is-only-a-dirty-trick-played-on-us-to-achieve-continuati",
-                                    "id": "1HNWf1klXOHWmakzO__9JgeF",
-                                    "background": "https://theysaidso.com/img/qod/qod-inspire.jpg",
-                                    "title": "Quote of the day about inspire"
-                                }
-                                ]
-                            },
-                            "baseurl": "https://theysaidso.com",
-                            "copyright": {
-                                "year": 2022,
-                                "url": "https://theysaidso.com"
-                            }
-                            }, 200)
-        else:
-            return MockResponse(None, 404)
-
-    @mock.patch('requests.get', side_effect=mocked_qod_get)
-    @patch('blueprints.weather.GetForecastWeather.get')
-    def test_check_weather(self, weather_mock, get_mock, client):
-        weather_mock.return_value = [{
-                "weather today": "Weather",
-                "main": "rain",
-                "city id": 1636722,
-                "city": "Malang",
-                "date": "2020-04-22"
-            }, 200, {'Content-Type': 'application/json'}]
-        
-        res = client.get('/qod', query_string={"q": "Malang"})
         res_json = json.loads(res.data)
         assert res.status_code == 200
+
+    def test_qod_list_noninternal(self, client, init_database):
+        token = create_token_noninternal()
+        res = client.get('/qod/list',
+                        headers={'Authorization':'Bearer ' + token},
+                        content_type='application/json')
+
+        res_json = json.loads(res.data)
+        assert res.status_code == 200
+
+
+    def test_qod_getid_internal(self, client, init_database):
+        token = create_token_internal()
+        res = client.get('/qod/1',
+                        headers={'Authorization':'Bearer ' + token},
+                        content_type='application/json')
+        res_json = json.loads(res.data)
+        assert res.status_code == 200
+
+
+    def test_qod_getid_invalid_internal(self, client, init_database):
+        token = create_token_internal()
+        res = client.get('/qod/100',
+                        headers={'Authorization':'Bearer ' + token},
+                        content_type='application/json')
+
+        res_json = json.loads(res.data)
+        assert res.status_code == 404
+
+
+    def test_qod_post_internal(self, client, init_database):
+        token = create_token_internal()
+        data = {
+            'status':'lula',
+        }
+        res = client.post('/qod',
+                        data=json.dumps(data),
+                        headers={'Authorization':'Bearer ' + token},
+                        content_type='application/json')
+
+        res_json = json.loads(res.data)
+        assert res.status_code == 200
+
+
+    def test_qod_put_internal(self, client, init_database):
+        token = create_token_internal()
+        data = {
+            'status':'lula',
+        }
+        res = client.put('/qod/1',
+                        data=json.dumps(data),
+                        headers={'Authorization':'Bearer ' + token},
+                        content_type='application/json')
+
+        res_json = json.loads(res.data)
+        assert res.status_code == 200
+
+
+    def test_qod_put_invalid_internal(self, client, init_database):
+        token = create_token_internal()
+        data = {
+            'status':'lula',
+        }
+        res = client.put('/qod/100',
+                        data=json.dumps(data),
+                        headers={'Authorization':'Bearer ' + token},
+                        content_type='application/json')
+
+        res_json = json.loads(res.data)
+        assert res.status_code == 404
+
+
+    def test_qod_delete_internal(self, client, init_database):
+        token = create_token_internal()
+        res = client.delete('/qod/1',
+                        headers={'Authorization':'Bearer ' + token},
+                        content_type='application/json')
+
+        res_json = json.loads(res.data)
+        assert res.status_code == 200
+        
+
+    def test_qod_delete_invalid_internal(self, client, init_database):
+        token = create_token_internal()
+        res = client.delete('/qod/100',
+                        headers={'Authorization':'Bearer ' + token},
+                        content_type='application/json')
+
+        res_json = json.loads(res.data)
+        assert res.status_code == 404

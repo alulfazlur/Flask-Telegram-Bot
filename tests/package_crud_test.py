@@ -6,11 +6,11 @@ class TestPackageCrud():
     def test_pack_list_internal(self, client, init_database):
         token = create_token_internal()
         data = {
-            'weather_category':1,
+            'weather_category':1
             # 'orderby':'weather_category',
             # 'sort':'asc'
         }
-        res = client.get('/package',
+        res = client.get('/package/list',
                         query_string=data,
                         headers={'Authorization':'Bearer ' + token},
                         content_type='application/json')
@@ -21,11 +21,11 @@ class TestPackageCrud():
     def test_pack_list2_internal(self, client, init_database):
         token = create_token_internal()
         data = {
-            'qod_category':1,
+            'qod_category':1
             # 'orderby':'weather_category',
             # 'sort':'desc'
         }
-        res = client.get('/package',
+        res = client.get('/package/list',
                         query_string=data,
                         headers={'Authorization':'Bearer ' + token},
                         content_type='application/json')
@@ -36,12 +36,12 @@ class TestPackageCrud():
     def test_pack_list3_internal(self, client, init_database):
         token = create_token_internal()
         data = {
-            'song_category':1,
+            'song_category':1
             # 'orderby':'weather_category',
             # 'sort':'desc'
         }
         token = create_token_internal()
-        res = client.get('/package',
+        res = client.get('/package/list',
                         query_string=data,
                         headers={'Authorization':'Bearer ' + token},
                         content_type='application/json')
@@ -52,7 +52,7 @@ class TestPackageCrud():
 
     def test_pack_list_noninternal(self, client, init_database):
         token = create_token_noninternal()
-        res = client.get('/package',
+        res = client.get('/package/list',
                         headers={'Authorization':'Bearer ' + token},
                         content_type='application/json')
 

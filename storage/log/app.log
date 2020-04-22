@@ -21,3 +21,24 @@ Traceback (most recent call last):
     qod['quote'] = qod_req['contents']['quotes'][0]['quote']
 KeyError: 'contents'
 [2020-04-22 02:24:02,257]{/home/alta11/APP-Alay/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/qod?q=Malang", "request": null, "response": {"message": "Internal Server Error"}}
+[2020-04-22 07:28:20,530]{/home/alta11/APP-Alay/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Malang", "request": null, "response": {"weather today": "Sometimes rain, maybe you should bring umbrella", "main": "rain", "city id": 1636722, "city": "Malang", "date": "2020-04-22"}}
+[2020-04-22 07:28:29,422]{/home/alta11/APP-Alay/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Surabaya", "request": null, "response": {"weather today": "Mostly rain, you should bring your umbrella!", "main": "thunderstorm", "city id": 1625822, "city": "Surabaya", "date": "2020-04-22"}}
+[2020-04-22 07:28:31,435]{/home/alta11/APP-Alay/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?q=Surabaya", "request": null, "response": {"quote": "Winning isn't everything...it's the only thing.", "author": "Vincent van Gogh", "category": "inspire"}}
+[2020-04-22 07:28:50,232]{/home/alta11/APP-Alay/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/weather?q=Lumajang", "request": null, "response": {"weather today": "Mostly rain, you should bring your umbrella!", "main": "thunderstorm", "city id": 1637090, "city": "Lumajang", "date": "2020-04-22"}}
+[2020-04-22 07:28:51,604]{/home/alta11/APP-Alay/blueprints/__init__.py:69} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "uri": "/qod?q=Lumajang", "request": null, "response": {"quote": "Winning isn't everything...it's the only thing.", "author": "Vincent van Gogh", "category": "inspire"}}
+[2020-04-22 07:28:53,030]{/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /track [GET]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta11/APP-Alay/blueprints/track/__init__.py", line 47, in get
+    title = track_req['tracks']['items'][0]['album']['name']
+KeyError: 'tracks'
+[2020-04-22 07:28:53,033]{/home/alta11/APP-Alay/blueprints/__init__.py:78} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/track?q=Lumajang", "request": null, "response": {"message": "Internal Server Error"}}
