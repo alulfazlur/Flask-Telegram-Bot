@@ -1,5 +1,4 @@
-[2020-04-16 16:30:57,092] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:52} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/user/list?sex=male", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1}, "response": {"message": "Internal Server Error"}}
-[2020-04-16 16:31:24,223] {/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /user/list [GET]
+[2020-04-16 19:28:30,486] {/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /user [POST]
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -11,16 +10,36 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/user/resources.py", line 102, in get
-    rows.append(marshal(row, Users.response_field))
-AttributeError: type object 'Users' has no attribute 'response_fields'
-[2020-04-16 16:31:24,231] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:52} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/user/list?sex=male", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1}, "response": {"message": "Internal Server Error"}}
-[2020-04-16 16:31:31,973] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:42} WARNING - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/user/list?sex=male", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1}, "response": [{"id": 1, "name": "Alul", "age": 19, "sex": "male", "client_id": 1}, {"id": 5, "name": "Al", "age": 20, "sex": "male", "client_id": 1}, {"id": 6, "name": "UL", "age": 20, "sex": "male", "client_id": 1}, {"id": 7, "name": "fast", "age": 20, "sex": "male", "client_id": 1}]}
-[2020-04-16 16:33:09,651] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:42} WARNING - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/user/list?sex=male&sort=desc", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1}, "response": [{"id": 1, "name": "Alul", "age": 19, "sex": "male", "client_id": 1}, {"id": 5, "name": "Al", "age": 20, "sex": "male", "client_id": 1}, {"id": 6, "name": "UL", "age": 20, "sex": "male", "client_id": 1}, {"id": 7, "name": "fast", "age": 20, "sex": "male", "client_id": 1}]}
-[2020-04-16 16:33:29,297] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:42} WARNING - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/user/list?order_by=age&sort=desc", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1}, "response": [{"id": 1, "name": "Alul", "age": 19, "sex": "male", "client_id": 1}, {"id": 5, "name": "Al", "age": 20, "sex": "male", "client_id": 1}, {"id": 6, "name": "UL", "age": 20, "sex": "male", "client_id": 1}, {"id": 7, "name": "fast", "age": 20, "sex": "male", "client_id": 1}]}
-[2020-04-16 16:33:35,171] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:42} WARNING - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/user/list?order_by=age&sort=asc", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1}, "response": [{"id": 1, "name": "Alul", "age": 19, "sex": "male", "client_id": 1}, {"id": 5, "name": "Al", "age": 20, "sex": "male", "client_id": 1}, {"id": 6, "name": "UL", "age": 20, "sex": "male", "client_id": 1}, {"id": 7, "name": "fast", "age": 20, "sex": "male", "client_id": 1}]}
-[2020-04-16 16:34:06,188] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:42} WARNING - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/user/list?order_by=age&sort=desc", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1}, "response": [{"id": 1, "name": "Alul", "age": 19, "sex": "male", "client_id": 1}, {"id": 5, "name": "Al", "age": 20, "sex": "male", "client_id": 1}, {"id": 6, "name": "UL", "age": 20, "sex": "male", "client_id": 1}, {"id": 7, "name": "fast", "age": 20, "sex": "male", "client_id": 1}]}
-[2020-04-16 16:34:27,561] {/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /user/list [GET]
+  File "/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/user/resources.py", line 31, in post
+    hash_pass = hashlib.sha512(args['password'].encode('utf-8') + salt).hexdigest()
+TypeError: can't concat str to bytes
+[2020-04-16 19:28:30,489] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:52} ERROR - REQUEST_LOG	{"status_code": 500, "method": "POST", "code": "500 INTERNAL SERVER ERROR", "uri": "/user?", "request": {"name": "sadsadsa", "age": 20, "sex": "male", "client_id": 1, "password": "alterraacademy"}, "response": {"message": "Internal Server Error"}}
+[2020-04-16 19:32:55,272] {/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /user [POST]
+Traceback (most recent call last):
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'salt' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -32,11 +51,67 @@ Traceback (most recent call last):
     return self.dispatch_request(*args, **kwargs)
   File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
     resp = meth(*args, **kwargs)
-  File "/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/user/resources.py", line 91, in get
-    qry = qry.order_by(desc(Users.age))
-NameError: name 'desc' is not defined
-[2020-04-16 16:34:27,568] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:52} ERROR - REQUEST_LOG	{"status_code": 500, "method": "GET", "code": "500 INTERNAL SERVER ERROR", "uri": "/user/list?orderby=age&sort=desc", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1}, "response": {"message": "Internal Server Error"}}
-[2020-04-16 16:36:24,803] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:42} WARNING - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/user/list?orderby=age&sort=desc", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1}, "response": [{"id": 5, "name": "Al", "age": 20, "sex": "male", "client_id": 1}, {"id": 6, "name": "UL", "age": 20, "sex": "male", "client_id": 1}, {"id": 7, "name": "fast", "age": 20, "sex": "male", "client_id": 1}, {"id": 1, "name": "Alul", "age": 19, "sex": "male", "client_id": 1}]}
-[2020-04-16 16:37:34,044] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:42} WARNING - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/user/list?orderby=age", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1}, "response": [{"id": 1, "name": "Alul", "age": 19, "sex": "male", "client_id": 1}, {"id": 5, "name": "Al", "age": 20, "sex": "male", "client_id": 1}, {"id": 6, "name": "UL", "age": 20, "sex": "male", "client_id": 1}, {"id": 7, "name": "fast", "age": 20, "sex": "male", "client_id": 1}]}
-[2020-04-16 17:00:26,407] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:42} WARNING - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/user/list?orderby=age&rp=2", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1}, "response": [{"id": 1, "name": "Alul", "age": 19, "sex": "male", "client_id": 1}, {"id": 5, "name": "Al", "age": 20, "sex": "male", "client_id": 1}]}
-[2020-04-16 17:00:42,301] {/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/__init__.py:42} WARNING - REQUEST_LOG	{"status_code": 200, "method": "GET", "code": "200 OK", "uri": "/user/list?orderby=age&rp=2&p=2", "request": {"name": "fast", "age": 20, "sex": "male", "client_id": 1}, "response": [{"id": 6, "name": "UL", "age": 20, "sex": "male", "client_id": 1}, {"id": 7, "name": "fast", "age": 20, "sex": "male", "client_id": 1}]}
+  File "/home/alta11/fullstack5_alul/Restful_API/2-FlaskRouting_Controller_Blueprint/blueprints/user/resources.py", line 36, in post
+    db.session.commit()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1036, in commit
+    self.transaction.commit()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 503, in commit
+    self._prepare_impl()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 482, in _prepare_impl
+    self.session.flush()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2496, in flush
+    self._flush(objects)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2637, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 69, in __exit__
+    exc_value, with_traceback=exc_tb,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2597, in _flush
+    flush_context.execute()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1136, in _emit_insert_statements
+    statement, params
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1288, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/alta11/virtualenv/rest_training/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.InternalError: (pymysql.err.InternalError) (1054, "Unknown column 'salt' in 'field list'")
+[SQL: INSERT INTO user (name, age, sex, client_id, updated_at, deleted_at, password, salt) VALUES (%(name)s, %(age)s, %(sex)s, %(client_id)s, %(updated_at)s, %(deleted_at)s, %(password)s, %(salt)s)]
+[parameters: {'name': 'sadsadsa', 'age': '20', 'sex': 'male', 'client_id': '1', 'updated_at': None, 'deleted_at': None, 'password': 'b82157bfa55845c684805af454063dc2', 'salt': 'e86b8d06dfa89759a8cef5fe0e327297fed2f154d5e816e1b725381d8ebd3f8001fb436fd45c3c86d1880aa53e7ce07be7a7080a6b2979ceceaf845a61a51ebc'}]
+(Background on this error at: http://sqlalche.me/e/2j85)
