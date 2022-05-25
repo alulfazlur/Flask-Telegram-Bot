@@ -33,7 +33,7 @@ pampy==0.3.0
 pluggy==0.13.1
 py==1.8.1
 pycparser==2.20
-PyJWT==1.7.1
+PyJWT==2.4.0
 PyMySQL==0.9.3
 pyowm==2.10.0
 pyparsing==2.4.7
